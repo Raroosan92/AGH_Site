@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF297DD9-3EAE-47EF-A971-36236DF4F62C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AGH_Site</RootNamespace>
+    <AssemblyName>AGH_Site</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44329</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assest\CSS\EN\animate6c2d.css" />
+    <Content Include="Assest\CSS\EN\bootstrap6c2d.css" />
+    <Content Include="Assest\CSS\EN\color6c2d.css" />
+    <Content Include="Assest\CSS\EN\custom6c2d.css" />
+    <Content Include="Assest\CSS\EN\elpath6c2d.css" />
+    <Content Include="Assest\CSS\EN\extendify-utilities449f.css" />
+    <Content Include="Assest\CSS\EN\flaticon5152.css" />
+    <Content Include="Assest\CSS\EN\flaticon6c2d.css" />
+    <Content Include="Assest\CSS\EN\fontawesome-all6c2d.css" />
+    <Content Include="Assest\CSS\EN\jquery-ui-1.9.2.custom.min6c2d.css" />
+    <Content Include="Assest\CSS\EN\jquery.fancybox.min6c2d.css" />
+    <Content Include="Assest\CSS\EN\nice-select6c2d.css" />
+    <Content Include="Assest\CSS\EN\odometer.min6c2d.css" />
+    <Content Include="Assest\CSS\EN\Plugins\barlowc20a.css" />
+    <Content Include="Assest\CSS\EN\Plugins\elementor-icons.minf531.css" />
+    <Content Include="Assest\CSS\EN\Plugins\fontawesome.min52d5.css" />
+    <Content Include="Assest\CSS\EN\Plugins\frontend.min0d09.css" />
+    <Content Include="Assest\CSS\EN\Plugins\jost2519.css" />
+    <Content Include="Assest\CSS\EN\Plugins\post-113816e00.css" />
+    <Content Include="Assest\CSS\EN\Plugins\post-6f072.css" />
+    <Content Include="Assest\CSS\EN\Plugins\robotoa67e.css" />
+    <Content Include="Assest\CSS\EN\Plugins\robotoslab811c.css" />
+    <Content Include="Assest\CSS\EN\Plugins\solid.min52d5.css" />
+    <Content Include="Assest\CSS\EN\Plugins\widget-divider.min0d09.css" />
+    <Content Include="Assest\CSS\EN\Plugins\widget-heading.min0d09.css" />
+    <Content Include="Assest\CSS\EN\responsive6c2d.css" />
+    <Content Include="Assest\CSS\EN\rtl6c2d.css" />
+    <Content Include="Assest\CSS\EN\style6c2d.css" />
+    <Content Include="Assest\CSS\EN\style6c2d1.css" />
+    <Content Include="Assest\CSS\EN\stylesfc7a.css" />
+    <Content Include="Assest\CSS\EN\swiper.min6c2d.css" />
+    <Content Include="Assest\CSS\EN\timePicker6c2d.css" />
+    <Content Include="Assest\Fonts\fa-brands-400.svg" />
+    <Content Include="Assest\Fonts\fa-light-300.svg" />
+    <Content Include="Assest\Fonts\fa-regular-400.svg" />
+    <Content Include="Assest\Fonts\fa-solid-900.svg" />
+    <Content Include="Assest\Fonts\flaticon_buildnox8aad.svg" />
+    <Content Include="Assest\Images\uploads\elementor\google-fonts\css\barlowc20a.css" />
+    <Content Include="Assest\Images\uploads\elementor\google-fonts\css\jost2519.css" />
+    <Content Include="Assest\Images\uploads\elementor\google-fonts\css\robotoa67e.css" />
+    <Content Include="Assest\Images\uploads\elementor\google-fonts\css\robotoslab811c.css" />
+    <Content Include="Assest\Images\buildnox\background\bg-4.jpg" />
+    <Content Include="Assest\Images\buildnox\favicon.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-1.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-106.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-107.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-10__clock.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-13.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-131.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-133.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-134.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-135.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-136.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-137.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-138.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-16.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-21.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-22.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-23.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-24.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-25.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-34.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-35.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-36.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-4.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-41.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-51.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-55.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-57.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-6.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-64.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-67.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-68.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-69.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-7.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-7__mapmarker.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-8.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-8__envelop.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-92.html" />
+    <Content Include="Assest\Images\buildnox\icons\icon-9__phone.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-bar-3.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-bar.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-mail.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-map.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-phone.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-phone2.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-phone3.png" />
+    <Content Include="Assest\Images\buildnox\icons\icon-phone4.png" />
+    <Content Include="Assest\Images\buildnox\icons\menu.svg" />
+    <Content Include="Assest\Images\buildnox\icons\menu2.svg" />
+    <Content Include="Assest\Images\buildnox\icons\preloader.svg" />
+    <Content Include="Assest\Images\buildnox\icons\quote.png" />
+    <Content Include="Assest\Images\buildnox\icons\text-bg.png" />
+    <Content Include="Assest\Images\buildnox\resource\building3.png" />
+    <Content Include="Assest\Images\buildnox\shape\shape-1.jpg" />
+    <Content Include="Assest\Images\buildnox\shape\shape-12.png" />
+    <Content Include="Assest\Images\buildnox\shape\shape-13.png" />
+    <Content Include="Assest\Images\buildnox\shape\shape-2.png" />
+    <Content Include="Assest\Images\buildnox\shape\shape-21.png" />
+    <Content Include="Assest\Images\buildnox\shape\shape-3.png" />
+    <Content Include="Assest\Images\favicon.png" />
+    <Content Include="Assest\Images\uploads\2023\03\author-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\author-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\author-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\banner-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\banner-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\banner-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\banner-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\banner-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\bg-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\bg-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\bg-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-12-370x272.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-12-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-12-70x62.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-13-370x272.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-13-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-13-70x62.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-14-370x272.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-14-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-14-70x62.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-14.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-15-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-15-70x62.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\blog-15.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\building3.png" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-10-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-12-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-13-453x660.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-14-453x700.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-14.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-47.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-48.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-49.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-50.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-9-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-9-453x700.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\gallery-9.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-1.png" />
+    <Content Include="Assest\Images\uploads\2023\03\image-13-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-13-960x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-16-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-16-960x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-19-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-19-875x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-2.png" />
+    <Content Include="Assest\Images\uploads\2023\03\image-26.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-27.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-28.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-3.png" />
+    <Content Include="Assest\Images\uploads\2023\03\image-5.png" />
+    <Content Include="Assest\Images\uploads\2023\03\image-7-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-7-960x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-8-1170x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\image-8-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\logo-light.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo-light2.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo-light3.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo.png" />
+    <Content Include="Assest\Images\uploads\2023\03\quote.svg" />
+    <Content Include="Assest\Images\uploads\2023\03\roller.png" />
+    <Content Include="Assest\Images\uploads\2023\03\service-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\shape-1.png" />
+    <Content Include="Assest\Images\uploads\2023\03\shape-4.png" />
+    <Content Include="Assest\Images\uploads\2023\03\shape-5.png" />
+    <Content Include="Assest\Images\uploads\2023\03\shape-6.png" />
+    <Content Include="Assest\Images\uploads\2023\03\signature.png" />
+    <Content Include="Assest\Images\uploads\2023\03\team-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-10-335x293.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-11.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-14.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-6-335x293.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-7-335x293.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-8-335x293.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-9-335x293.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\team-9.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-3-70x70.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-4-70x70.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-4-84x84.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-5-70x70.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-5-84x84.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-6-70x70.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-6-84x84.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-7-70x70.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-7-84x84.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\testimonial-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\author-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\author-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\banner-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\banner-11.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\banner-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\banner-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\banner-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\banner-9.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\bg-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\bg-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-1.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-10.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-2.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-3.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-4.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-5.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-6.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-7.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-8.png" />
+    <Content Include="Assest\Images\uploads\2023\04\brand-logo-9.png" />
+    <Content Include="Assest\Images\uploads\2023\04\building-370x422.png" />
+    <Content Include="Assest\Images\uploads\2023\04\building-453x400.png" />
+    <Content Include="Assest\Images\uploads\2023\04\building.png" />
+    <Content Include="Assest\Images\uploads\2023\04\building2.png" />
+    <Content Include="Assest\Images\uploads\2023\04\feature-image.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-16-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-16.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-20-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-20.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-21-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-21.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-22.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-23.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-24.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-25.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-26.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-27.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-28.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-29.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-39-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-39-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-39.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-40-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-40-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-40.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-41-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-41-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-41.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-42-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-42-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-42-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-42.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-43-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-43-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-43.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-44-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-44-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-44-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-44.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-45-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-45-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-45.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-46-370x325.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-46-370x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-46-438x422.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-46.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\gallery-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\icon-mail.png" />
+    <Content Include="Assest\Images\uploads\2023\04\icon-map.png" />
+    <Content Include="Assest\Images\uploads\2023\04\icon-phone.png" />
+    <Content Include="Assest\Images\uploads\2023\04\icon_1.svg" />
+    <Content Include="Assest\Images\uploads\2023\04\icon_2.svg" />
+    <Content Include="Assest\Images\uploads\2023\04\icon_3.svg" />
+    <Content Include="Assest\Images\uploads\2023\04\icon_4.svg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-1.png" />
+    <Content Include="Assest\Images\uploads\2023\04\image-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-11.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-16.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-17.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-18.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-19.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-2.png" />
+    <Content Include="Assest\Images\uploads\2023\04\image-20.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-21.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-22.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-23.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-24.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-25.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-29.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-30.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-31.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-32.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-33.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-34.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-35.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-36.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-37.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-4.png" />
+    <Content Include="Assest\Images\uploads\2023\04\image-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-6-453x300.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-6.png" />
+    <Content Include="Assest\Images\uploads\2023\04\image-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\image-7.png" />
+    <Content Include="Assest\Images\uploads\2023\04\image-9.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\map.png" />
+    <Content Include="Assest\Images\uploads\2023\04\menu.svg" />
+    <Content Include="Assest\Images\uploads\2023\04\service-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\service-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\service-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\service-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\service-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\service-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\04\shape-7.png" />
+    <Content Include="Assest\Images\uploads\2023\04\shape-8.png" />
+    <Content Include="Assest\Images\uploads\2023\04\signature2.png" />
+    <Content Include="Assest\Images\uploads\2023\04\signature3.png" />
+    <Content Include="Assest\Images\uploads\2023\04\signature4.png" />
+    <Content Include="Assest\Images\uploads\2023\04\signature5.png" />
+    <Content Include="Assest\Images\uploads\2023\05\image-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\05\image-14.jpg" />
+    <Content Include="Assest\Images\uploads\2023\05\image-15.jpg" />
+    <Content Include="Assest\Images\uploads\2023\05\image-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\banner-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\banner-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\banner-14-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\brand-1.png" />
+    <Content Include="Assest\Images\uploads\2023\08\brand-2.png" />
+    <Content Include="Assest\Images\uploads\2023\08\brand-3.png" />
+    <Content Include="Assest\Images\uploads\2023\08\brand-4.png" />
+    <Content Include="Assest\Images\uploads\2023\08\brand-5.png" />
+    <Content Include="Assest\Images\uploads\2023\08\chooseus-bg.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\contact-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\creative-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\creative-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\feature-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\feature-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\feature-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-57.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-58.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-59.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-60.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-61.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-62.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-63.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-64.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-65.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\gallery-66.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\icon-17.png" />
+    <Content Include="Assest\Images\uploads\2023\08\icon-18.png" />
+    <Content Include="Assest\Images\uploads\2023\08\icon-19.png" />
+    <Content Include="Assest\Images\uploads\2023\08\icon-20.png" />
+    <Content Include="Assest\Images\uploads\2023\08\icon-5.png" />
+    <Content Include="Assest\Images\uploads\2023\08\service-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\service-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\service-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\shape-9.png" />
+    <Content Include="Assest\Images\uploads\2023\08\signature-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\about-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\about-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-11.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-14.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-15.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-16.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-17.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-18.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-19.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-2.png" />
+    <Content Include="Assest\Images\uploads\2023\09\about-20.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\about-9.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\author-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-15.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-16.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-17.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-18.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-19.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-20.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-21.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-22.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-23.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-24.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-25.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-26.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-28.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-29.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-30.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-31.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-32.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-33.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-34.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-35.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-36.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-img-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-img-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-img-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-img-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-11.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-12.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-13.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-14.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-15.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-16.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-17.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-18.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-19.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-20.png" />
+    <Content Include="Assest\Images\uploads\2023\09\brand-logo-21.png" />
+    <Content Include="Assest\Images\uploads\2023\09\building-2.png" />
+    <Content Include="Assest\Images\uploads\2023\09\chooseus-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\contact-bg.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\creative-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\creative-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-11.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\feature-9.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-100.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-101.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-102.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-103.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-104.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-111.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-112.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-113.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-114.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-119.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-120.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-121.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-122.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-124.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-125.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-126.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-127.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-128.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-129.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-130.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-131.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-132.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-133.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-134.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-135.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-145.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-146.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-147.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-148.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-149.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-150.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-151.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-152.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-153.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-154.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-155.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-156.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-162-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-162.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-67.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-68.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-69.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-73.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-74.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-75.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-76.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-77.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-78.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-79.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-80.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-81.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-82.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-83.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-84.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-85.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-86.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-87.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-88.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-89.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-90.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-91.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-92.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-93-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-94.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-95.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-96.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-97.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-98.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\gallery-99.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-100.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-101.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-102.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-104.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-105.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-108.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-109.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-110.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-111.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-117.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-129.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-130.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-28.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-29.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-30.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-31.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-32.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-33.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-42.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-43.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-44.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-45.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-46.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-47.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-48.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-49.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-5.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-52.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-56.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-59.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-60.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-61.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-62.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-63.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-65.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-66.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-80.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-81.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-93.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-94.png" />
+    <Content Include="Assest\Images\uploads\2023\09\icon-95.png" />
+    <Content Include="Assest\Images\uploads\2023\09\image-38.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\intro-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\light-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\location-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\page-title-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\page-title-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\page-title.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-13.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-14.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-15.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-16.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-17.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-18.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-19.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-20.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-25.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-26.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-27.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-28.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-29.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-30.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-31.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-32.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-33.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-34.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-35.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-36.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\service-bg.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-10.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-11.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-14.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-15.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-16.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-17.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-18.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-19.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-20.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-22.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-23.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-24.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-25.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-26.png" />
+    <Content Include="Assest\Images\uploads\2023\09\shape-27.png" />
+    <Content Include="Assest\Images\uploads\2023\09\signature-2.png" />
+    <Content Include="Assest\Images\uploads\2023\09\story-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\story-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\story-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\transforming-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\transforming-2.png" />
+    <Content Include="Assest\Images\uploads\2023\09\vector-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\vector-2-1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\video-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\video-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\video-bg-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\video-bg-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\video-bg.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\vision-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\welcome-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\feature-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\feature-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\feature-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-105.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-106.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-107.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-108.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-109.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-110.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-70.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-71.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\gallery-72.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\logo-5.png" />
+    <Content Include="Assest\Images\uploads\2023\10\logo-6.png" />
+    <Content Include="Assest\Images\uploads\2023\10\logo-8.png" />
+    <Content Include="Assest\Images\uploads\2023\10\news-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-10.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-11.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-12.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-2-370x284.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-2.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-3.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-4.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-5.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-6.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-7.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-8-370x284.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-8.jpg" />
+    <Content Include="Assest\Images\uploads\2023\10\news-9.jpg" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-100638507.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-100edfd.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-102190773.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-10263d0.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-10405be52.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1049564.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-10675374a.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1091492ba.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-111816e0c.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-11310861d.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-113816e00.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-11589160f.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-117717fa0.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1193bca.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-121dc7f.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-123603c.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-125008b.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1271659.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-12768415a.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-127705bca.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1290065.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-12953e898.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-130270ffe.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-131789822.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-132300c03.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-132815a42.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-132b31e.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-133172498.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-13355b8f9.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-134203675.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-134222289.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-13423cfd1.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-134b92d.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1368372.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-138c7b4.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-140c410.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-142c17e.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-1468de7.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-5940b49e.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-6265bcbc.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-647895ab.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-6966be08.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-6f072.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-722457e7.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-74527e5b.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-758357f2.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-7922b15e.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-81574a52.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-830573ae.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-83824f89.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-8543b7.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-86003122.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-8826c0.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-88788cca.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-9059d0.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-91332fec.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-922b44.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-9319ae1c.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-9485ec.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-962bb0.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-96872d68.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-97700b13.css" />
+    <Content Include="Assest\Images\uploads\elementor\css\post-98ec9e.css" />
+    <Content Include="Assest\JS\appear431f.js" />
+    <Content Include="Assest\JS\bootstrap.min431f.js" />
+    <Content Include="Assest\JS\comment-reply.min6c2d.js" />
+    <Content Include="Assest\JS\core.minb37e.js" />
+    <Content Include="Assest\JS\faqs-tab8a54.js" />
+    <Content Include="Assest\JS\formsd87f.js" />
+    <Content Include="Assest\JS\frontend-modules.min0d09.js" />
+    <Content Include="Assest\JS\frontend.min0d09.js" />
+    <Content Include="Assest\JS\funfact-counter8a54.js" />
+    <Content Include="Assest\JS\hooks.min4fdd.js" />
+    <Content Include="Assest\JS\i18n.minc33c.js" />
+    <Content Include="Assest\JS\indexfc7a.js" />
+    <Content Include="Assest\JS\isotope431f.js" />
+    <Content Include="Assest\JS\jquery-migrate.min5589.js" />
+    <Content Include="Assest\JS\jquery-ui-1.9.2.custom.min431f.js" />
+    <Content Include="Assest\JS\jquery.ajaxchimp.min431f.js" />
+    <Content Include="Assest\JS\jquery.fancybox431f.js" />
+    <Content Include="Assest\JS\jquery.marquee.min431f.js" />
+    <Content Include="Assest\JS\jquery.minf43b.js" />
+    <Content Include="Assest\JS\jquery.nice-select.min431f.js" />
+    <Content Include="Assest\JS\jquery3.3.1.js" />
+    <Content Include="Assest\JS\odometer.min431f.js" />
+    <Content Include="Assest\JS\parallax-scroll431f.js" />
+    <Content Include="Assest\JS\project-masonry8a54.js" />
+    <Content Include="Assest\JS\script6c2d.js" />
+    <Content Include="Assest\JS\swiper.min431f.js" />
+    <Content Include="Assest\JS\TweenMax.min431f.js" />
+    <Content Include="Assest\JS\webpack.runtime.min0d09.js" />
+    <Content Include="Assest\JS\wow431f.js" />
+    <Content Include="Controls\EN\Footer.ascx" />
+    <Content Include="Controls\EN\Header.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controls\EN\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EN\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EN\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EN\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Assest\CSS\AR\" />
+    <Folder Include="Controls\AR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\MainMaster.Master" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chpv4kjgogqm7e_a8s52hs.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chpv4kjgogqm7e_ass52hs.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chpv4kjgogqm7e_dms5.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e30-8s51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e30-8s6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e30-8s6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3j-ws51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3j-ws6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3j-ws6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3p-ks51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3p-ks6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3p-ks6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3q-0s51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3q-0s6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3q-0s6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3t-4s51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3t-4s6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3t-4s6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3w-os51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3w-os6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3w-os6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3_-gs51os.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3_-gs6fospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chqv4kjgogqm7e3_-gs6vospt4.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chrv4kjgogqm7e3b_s0wh8rna.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chrv4kjgogqm7e3b_s1wh8rna.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chrv4kjgogqm7e3b_s7wh8.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chrv4kjgogqm7e_cfs0wh8rna.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chrv4kjgogqm7e_cfs1wh8rna.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chrv4kjgogqm7e_cfs7wh8.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfo452ogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfo452ohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfo452ouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoa5wogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoa5wohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoa5wouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoc5mogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoc5mohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoc5mouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoq4mogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoq4mohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfoq4mouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfp04wogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfp04wohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfp04wouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfpi42ogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfpi42ohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfpi42ouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfpk5gogvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfpk5gohvtobdw.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chsv4kjgogqm7e_cfpk5gouvto.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chtv4kjgogqm7e_cfny8h0jma.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chtv4kjgogqm7e_cfny8hijmaci.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\barlow-7chtv4kjgogqm7e_cfny8hmjmaci.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\jost-92zatbhpnqw73odd4iyl.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\jost-92zatbhpnqw73ord4iyl.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\jost-92zatbhpnqw73otd4g.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\jost-92zutbhpnqw73oht4d4h.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\jost-92zutbhpnqw73oht5d4htxm.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\jost-92zutbhpnqw73oht7j4htxm.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkahkawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkankawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkbnka.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkbxkawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkc3kawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkchkawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkcnkawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkcxkawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkenkawzu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3-ubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3cubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3gubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3iubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3kubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3oubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluamawcubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\roboto-kfo7cnqeu92fr1me7ksn66agldtyluamaxkubgee.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufa5qw54a.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufb5qw54a.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufc5qw54a.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufd5qw54a.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufj5qw54a.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufn5qu.woff2" />
+    <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufo5qw54a.woff2" />
+    <Content Include="Assest\Fonts\fa-brands-400.eot" />
+    <Content Include="Assest\Fonts\fa-brands-400.ttf" />
+    <Content Include="Assest\Fonts\fa-brands-400.woff" />
+    <Content Include="Assest\Fonts\fa-brands-400.woff2" />
+    <Content Include="Assest\Fonts\fa-brands-400d41d.eot" />
+    <Content Include="Assest\Fonts\fa-light-300.eot" />
+    <Content Include="Assest\Fonts\fa-light-300.ttf" />
+    <Content Include="Assest\Fonts\fa-light-300.woff" />
+    <Content Include="Assest\Fonts\fa-light-300.woff2" />
+    <Content Include="Assest\Fonts\fa-light-300d41d.eot" />
+    <Content Include="Assest\Fonts\fa-regular-400.eot" />
+    <Content Include="Assest\Fonts\fa-regular-400.ttf" />
+    <Content Include="Assest\Fonts\fa-regular-400.woff" />
+    <Content Include="Assest\Fonts\fa-regular-400.woff2" />
+    <Content Include="Assest\Fonts\fa-regular-400d41d.eot" />
+    <Content Include="Assest\Fonts\fa-solid-900.eot" />
+    <Content Include="Assest\Fonts\fa-solid-900.ttf" />
+    <Content Include="Assest\Fonts\fa-solid-900.woff" />
+    <Content Include="Assest\Fonts\fa-solid-900.woff2" />
+    <Content Include="Assest\Fonts\fa-solid-900d41d.eot" />
+    <Content Include="Assest\Fonts\flaticon_buildnox8aad.eot" />
+    <Content Include="Assest\Fonts\flaticon_buildnox8aad.ttf" />
+    <Content Include="Assest\Fonts\flaticon_buildnox8aad.woff" />
+    <Content Include="Assest\Fonts\flaticon_buildnox8aad.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65369</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44329/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
