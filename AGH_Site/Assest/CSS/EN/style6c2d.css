@@ -18142,7 +18142,7 @@ figure{
 .banner-style-35:before{
 	position: absolute;
 	content: '';
-	background: #f4f4f4;
+	/*background: #f4f4f4;*/
 	width: 375px;
 	height: 65px;
 	left: 0px;
@@ -18221,7 +18221,7 @@ figure{
 .banner-bottom-text:before{
 	position: absolute;
 	content: '';
-	background: #f4f4f4;
+	/*background: #f4f4f4;*/
 	width: 375px;
 	height: 100%;
 	left: 0px;

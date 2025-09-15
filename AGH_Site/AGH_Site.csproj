@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="Assest\CSS\EN\animate6c2d.css" />
     <Content Include="Assest\CSS\EN\bootstrap6c2d.css" />
     <Content Include="Assest\CSS\EN\color6c2d.css" />
@@ -124,6 +125,10 @@
     <Content Include="Assest\CSS\EN\Plugins\solid.min52d5.css" />
     <Content Include="Assest\CSS\EN\Plugins\widget-divider.min0d09.css" />
     <Content Include="Assest\CSS\EN\Plugins\widget-heading.min0d09.css" />
+    <Content Include="Assest\CSS\EN\post-127705bca.css" />
+    <Content Include="Assest\CSS\EN\post-130270ffe.css" />
+    <Content Include="Assest\CSS\EN\post-13355b8f9.css" />
+    <Content Include="Assest\CSS\EN\post-134203675.css" />
     <Content Include="Assest\CSS\EN\responsive6c2d.css" />
     <Content Include="Assest\CSS\EN\rtl6c2d.css" />
     <Content Include="Assest\CSS\EN\style6c2d.css" />
@@ -838,27 +843,55 @@
     <Content Include="Assest\JS\TweenMax.min431f.js" />
     <Content Include="Assest\JS\webpack.runtime.min0d09.js" />
     <Content Include="Assest\JS\wow431f.js" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Controls\EN\Footer.ascx" />
     <Content Include="Controls\EN\Header.ascx" />
+    <Content Include="Controls\EN\HeaderInner.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Projects.aspx" />
+    <Content Include="Services.aspx" />
+    <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\EN\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\EN\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\EN\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\EN\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EN\HeaderInner.ascx.cs">
+      <DependentUpon>HeaderInner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EN\HeaderInner.ascx.designer.cs">
+      <DependentUpon>HeaderInner.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -877,7 +910,35 @@
     <Compile Include="MasterPages\MainMaster.Master.designer.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="MasterPages\MainMasterInner.Master.cs">
+      <DependentUpon>MainMasterInner.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MainMasterInner.Master.designer.cs">
+      <DependentUpon>MainMasterInner.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1002,6 +1063,7 @@
     <Content Include="Assest\Fonts\flaticon_buildnox8aad.ttf" />
     <Content Include="Assest\Fonts\flaticon_buildnox8aad.woff" />
     <Content Include="Assest\Fonts\flaticon_buildnox8aad.woff2" />
+    <Content Include="MasterPages\MainMasterInner.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

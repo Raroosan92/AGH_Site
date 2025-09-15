@@ -1,6 +1,6 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="AGH_Site.MasterPages.MainMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterInner.master.cs" Inherits="AGH_Site.MasterPages.MainMasterInner" %>
 
-<%@ Register Src="/controls/en/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="/controls/en/HeaderInner.ascx" TagPrefix="uc1" TagName="Header" %>
 <%@ Register Src="/controls/en/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 
@@ -428,7 +428,7 @@
     <link rel="stylesheet" href="/Assest/CSS/EN/Plugins/post-6f072.css?ver=1748158620" type="text/css" media="all" />
     <link rel="stylesheet" href="/Assest/CSS/EN/Plugins/widget-heading.min0d09.css?ver=3.29.0" type="text/css" media="all" />
     <link rel="stylesheet" href="/Assest/CSS/EN/Plugins/widget-divider.min0d09.css?ver=3.29.0" type="text/css" media="all" />
-    <link rel="stylesheet" href="/Assest/CSS/EN/post-130270ffe.css?ver=1748181741" type="text/css" media="all" />
+    <%--<link rel="stylesheet" href="/Assest/CSS/EN/Plugins/post-113816e00.css?ver=1748171229" type="text/css" media="all" />--%>
 
     <link rel="stylesheet" href="/Assest/CSS/EN/Plugins/robotoa67e.css?ver=1748158645" type="text/css" media="all" />
     <link rel="stylesheet" href="/Assest/CSS/EN/Plugins/robotoslab811c.css?ver=1748158654" type="text/css" media="all" />
