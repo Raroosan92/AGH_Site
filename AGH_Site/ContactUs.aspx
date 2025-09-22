@@ -41,7 +41,7 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="mb_50 fs_18 te-bn-text">AGH partners with investors, developers, and operators to deliver impactful real estate projects in Morocco and beyond. Whether you’re exploring opportunities, seeking funding, or ready to build — we’re here to guide you.</p>
                                 </div>
 
                             </div>

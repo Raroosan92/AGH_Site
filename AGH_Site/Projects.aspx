@@ -44,7 +44,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img fetchpriority="high" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/03/gallery-9-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img fetchpriority="high" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/03/gallery-9-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/renovation-of-roof/index.html">Renovation Of Roof</a></h3>
                                                             <span class="bn-project-cat">Alfa Project</span>
@@ -62,7 +62,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img decoding="async" width="370" height="422" src="../wp-content/uploads/2023/03/gallery-10-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img decoding="async" width="370" height="422" src="/assest/images/uploads/2023/03/gallery-10-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/construction-projects/index.html">Construction Projects</a></h3>
                                                             <span class="bn-project-cat">Alfa Project</span>
@@ -80,7 +80,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img decoding="async" width="370" height="422" src="../wp-content/uploads/2023/04/building-370x422.png" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img decoding="async" width="370" height="422" src="/assest/images/uploads/2023/04/building-370x422.png" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/general-construction/index.html">General Construction</a></h3>
                                                             <span class="bn-project-cat">Alfa Project</span>
@@ -98,7 +98,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/03/gallery-12-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img loading="lazy" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/03/gallery-12-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/home-construction/index.html">Home Construction</a></h3>
                                                             <span class="bn-project-cat">Alfa Project</span>
@@ -116,7 +116,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/04/gallery-20-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img loading="lazy" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/04/gallery-20-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/renovation-of-roof-2/index.html">Renovation Of Roof</a></h3>
                                                             <span class="bn-project-cat">Construction Project, Lorence Project</span>
@@ -134,7 +134,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/04/gallery-21-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img loading="lazy" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/04/gallery-21-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/construction-projects-2/index.html">Construction Projects</a></h3>
                                                             <span class="bn-project-cat">Construction Project, Lorence Project</span>
@@ -152,7 +152,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/04/gallery-46-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img loading="lazy" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/04/gallery-46-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/building-construction/index.html">Building Construction</a></h3>
                                                             <span class="bn-project-cat">Lorence Project</span>
@@ -170,7 +170,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/04/gallery-44-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img loading="lazy" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/04/gallery-44-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/renovation-of-roofs/index.html">Renovation Of Roofs</a></h3>
                                                             <span class="bn-project-cat">Lorence Project</span>
@@ -188,7 +188,7 @@
                                                 <div class="project-block">
                                                     <div class="inner-box">
                                                         <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="370" height="422" src="../wp-content/uploads/2023/04/gallery-42-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
+                                                            <img loading="lazy" decoding="async" width="370" height="422" src="/assest/images/uploads/2023/04/gallery-42-370x422.jpg" class="attachment-buildnox_370x422 size-buildnox_370x422 wp-post-image" alt="" /></figure>
                                                         <div class="content-box bn-project-box">
                                                             <h3 class="bn-project-title"><a href="../project/general-constructions/index.html">General Constructions</a></h3>
                                                             <span class="bn-project-cat">Lorence Project</span>

@@ -371,8 +371,10 @@
                                         <div class="row align-items-center">
                                             <div class="col-lg-6 col-md-6 col-sm-12 content-column">
                                                 <div class="content-box">
-                                                    <h2 class="te-title">Impactful Architecture</h2>
-                                                    <p class="te-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                                                    <h2 class="te-title">Who We Are</h2>
+                                                    <p class="te-text">
+                                                        AGH is a U.S.-based real estate advisory and development firm with a strategic focus on Morocco as the <b>gateway to Africa.</b> We combine international standards with deep local expertise to help investors identify, fund, build, and manage high-potential <b>commercial and medical real estate projects.</b>
+                                                    </p>
                                                 </div>
                                             </div>
 
@@ -381,10 +383,10 @@
                                                     <figure class="image">
                                                         <img decoding="async" src="Assest/Images/uploads/2023/09/vector-2-1.png" alt="Awesome Image">
                                                     </figure>
-                                                    <div class="experience-box">
+                                                    <%--<div class="experience-box">
                                                         <h4 class="exper-text">Projects Completed</h4>
                                                         <h1 class="exper-title">791</h1>
-                                                    </div>
+                                                    </div>--%>
 
                                                 </div>
                                             </div>
@@ -398,14 +400,14 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-f108e1b elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f108e1b" data-element_type="section">
+      <%--  <section class="elementor-section elementor-top-section elementor-element elementor-element-f108e1b elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f108e1b" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a997227" data-id="a997227" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-28435bb elementor-widget elementor-widget-buildnox_ta_architect_creative" data-id="28435bb" data-element_type="widget" data-settings="{&quot;buildnox_layout_margin&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_margin_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_margin_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_ta_architect_creative.default">
                             <div class="elementor-widget-container">
 
-                                <%-- creative-style-two --%>
+                                <%-- creative-style-two -%>
                                 <section class="creative-style-two build-creative-section">
                                     <div class="auto-container">
                                         <div class="row align-items-center">
@@ -472,13 +474,13 @@
                                         </div>
                                     </div>
                                 </section>
-                                <%-- creative-style-two end --%>
+                                <%-- creative-style-two end -%>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-4067426 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4067426" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25748db" data-id="25748db" data-element_type="column">
