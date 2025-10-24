@@ -29,11 +29,11 @@
                                                     <h6>company</h6>
                                                 </div>
                                                 <ul class="links-list clearfix">
-                                                    <li id="menu-item-16069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16069"><a href="../blog-standard/index.html">Blogs<span class="menu-item_plus"></span></a></li>
-                                                    <li id="menu-item-16070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16070"><a href="../about/index.html">About<span class="menu-item_plus"></span></a></li>
-                                                    <li id="menu-item-16071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16071"><a href="../appointment/index.html">Appointment<span class="menu-item_plus"></span></a></li>
-                                                    <li id="menu-item-16072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16072"><a href="../portfolio/index.html">Portfolio<span class="menu-item_plus"></span></a></li>
-                                                    <li id="menu-item-16073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16073"><a href="../services-style-01/index.html">Services<span class="menu-item_plus"></span></a></li>
+                                                    <li id="menu-item-16069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16069"><a href="../../Default.aspx">Home<span class="menu-item_plus"></span></a></li>
+                                                    <li id="menu-item-16070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16070"><a href="../../AboutUs.aspx">About<span class="menu-item_plus"></span></a></li>
+                                                    <li id="menu-item-16071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16071"><a href="../../Services.aspx">Services<span class="menu-item_plus"></span></a></li>
+                                                    <li id="menu-item-16072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16072"><a href="../../Projects.aspx">Projects<span class="menu-item_plus"></span></a></li>
+                                                    <li id="menu-item-16073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16073"><a href="../../ContactUs.aspx">ContactUs<span class="menu-item_plus"></span></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     <div class="copyright">
-                                        <p>&copy; Copyright  <a href="#">Buildnox</a> 2023 . All right reserved.</p>
+                                        <p>&copy; Copyright  <a href="#">AGH</a> <% DateTime.Now.Year.ToString(); %> . All right reserved.</p>
                                     </div>
                                 </div>
                             </div>

@@ -1065,6 +1065,7 @@
     <Content Include="MasterPages\MainMaster.Master" />
     <Content Include="MasterPages\MainMasterInner.Master" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\site40670-WebDeploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
