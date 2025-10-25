@@ -958,6 +958,7 @@
     <Content Include="Controls\EN\HeaderInner.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="google22e3f0ac626b01ab.html" />
     <Content Include="Projects.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Test.aspx" />

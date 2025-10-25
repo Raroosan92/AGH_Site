@@ -48,6 +48,11 @@
     <%-- For IE --%>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+
+    <meta name="google-site-verification" content="V2EftY1_WIR_ylUdKr4h9osTNHuAHcYhJNTrH5WjbS8" />
+
+
+
     <meta name='robots' content='max-image-preview:large' />
     <style>
         img:is([sizes="auto" i], [sizes^="auto," i]) {
