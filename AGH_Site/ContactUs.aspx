@@ -3,12 +3,199 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <link rel="stylesheet" href="/Assest/CSS/EN/post-13355b8f9.css?ver=1748181741" type="text/css" media="all" />
+    <style>
+        .elementor a {
+            box-shadow: none;
+            text-decoration: none;
+            color: #242424;
+        }
 
+        .faq-section {
+            /*background: #f6f1eb;*/
+            padding: 90px 6%;
+            /*font-family: system-ui, sans-serif;*/
+        }
+
+        /* ================= TITLE ================= */
+        .faq-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 44px;
+            color: #111;
+        }
+
+        /* ================= GRID ================= */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 26px;
+        }
+
+        /* ================= CARD ================= */
+        .faq-card {
+            /* background: #efe9e3; */
+            border: 1px solid #000000;
+            padding: 26px 28px;
+            border-radius: 8px;
+        }
+
+            .faq-card h4 {
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                color: #111;
+            }
+
+            .faq-card p {
+                font-size: 14px;
+                line-height: 1.7;
+                color: #4a443f;
+            }
+
+        /* ================= CTA ================= */
+        .faq-cta {
+            margin-top: 90px;
+            text-align: center;
+        }
+
+            .faq-cta h2 {
+                font-size: 30px;
+                margin-bottom: 14px;
+                color: #111;
+            }
+
+            .faq-cta p {
+                max-width: 620px;
+                margin: 0 auto;
+                font-size: 15px;
+                line-height: 1.7;
+                color: #5a524c;
+            }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 900px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-title {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .faq-section {
+                padding: 60px 24px;
+            }
+        }
+
+        .office-hours-section {
+            /*background: #f6f1eb;*/
+            padding: 60px 6%;
+            /*font-family: system-ui, sans-serif;*/
+        }
+
+        .office-hours-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fefaf6;
+            border: 1px solid #0e0e0e;
+            padding: 30px 34px;
+            border-radius: 8px;
+        }
+
+            .office-hours-box h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: #111;
+            }
+
+        /* rows */
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+        }
+
+            .hours-row span {
+                font-size: 14px;
+                color: #5a524c;
+            }
+
+            .hours-row strong {
+                font-size: 14px;
+                font-weight: 600;
+                color: #111;
+            }
+
+        /* responsive */
+        @media (max-width: 600px) {
+            .office-hours-box {
+                padding: 24px;
+            }
+
+            .hours-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+        }
+
+
+
+
+        /*For Email*/
+        .form-message {
+            padding: 14px 18px;
+            margin-bottom: 18px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .success {
+            background: #e7f6ee;
+            color: #1f7a4a;
+            border: 1px solid #b8e5cf;
+        }
+
+        .error {
+            background: #fdeaea;
+            color: #9b1c1c;
+            border: 1px solid #f5bcbc;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .btn-submit {
+            background: #6c0f25;
+            color: #fff;
+            padding: 12px 22px;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div data-elementor-type="wp-page" data-elementor-id="13355" class="elementor elementor-13355">
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-5b734ef elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="5b734ef" data-element_type="section">
+        <%-- <section class="elementor-section elementor-top-section elementor-element elementor-element-5b734ef elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="5b734ef" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6a502bd" data-id="6a502bd" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -25,7 +212,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-d631c71 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d631c71" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-08018d5" data-id="08018d5" data-element_type="column">
@@ -37,11 +224,11 @@
                                 <div class="build-title-wrap">
 
                                     <div class="main____title ">
-                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Drop Us a Line</h2>
+                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Get in Touch</h2>
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text">AGH partners with investors, developers, and operators to deliver impactful real estate projects in Morocco and beyond. Whether you’re exploring opportunities, seeking funding, or ready to build — we’re here to guide you.</p>
+                                    <p class="mb_50 fs_18 te-bn-text">Have questions about our investment opportunities, services, or fund structure? Our team is ready to help. Reach out using any method below, and we'll respond promptly.</p>
                                 </div>
 
                             </div>
@@ -63,30 +250,55 @@
                                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                                             <ul></ul>
                                         </div>
-                                        <form action="" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-                                            <div style="display: none;">
-                                                <input type="hidden" name="_wpcf7" value="4333" />
-                                                <input type="hidden" name="_wpcf7_version" value="6.0.6" />
-                                                <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4333-p13355-o1" />
-                                                <input type="hidden" name="_wpcf7_container_post" value="13355" />
-                                                <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                            </div>
-                                            <div class="row">
-                                                <div class="form-group col-md-12 te-contact-form"><span class="wpcf7-form-control-wrap" data-name="text-38">
-                                                    <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" value="" type="text" name="text-38" /></span></div>
-                                                <div class="form-group col-md-12 te-contact-form"><span class="wpcf7-form-control-wrap" data-name="email-108">
-                                                    <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" value="" type="email" name="email-108" /></span></div>
-                                                <div class="form-group col-md-12 te-contact-form"><span class="wpcf7-form-control-wrap" data-name="text-39">
-                                                    <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject" value="" type="text" name="text-39" /></span></div>
-                                                <div class="form-group col-md-12 te-contact-form"><span class="wpcf7-form-control-wrap" data-name="textarea-318">
-                                                    <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Massage" name="textarea-318"></textarea></span></div>
-                                                <div class="form-group col-md-12 thm-btn">
-                                                    <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                                    <button class="btn-1 text-center pt_12 pb_9 pl_30 pr_30 b_radius_5 ff_sec fw_bold tt_u fs_14 ls_1 yt-btn-title-v1" type="submit">Submit now <span></span></button>
+
+                                        <form id="form1" runat="server">
+                                            <div class="contact-wrapper">
+
+                                               <%-- <h2>Contact Us</h2>
+                                                <p class="intro">
+                                                    We'd love to hear from you. Please fill out the form below and our team will respond shortly.
+                                                </p>--%>
+
+                                                <!-- MESSAGE -->
+                                                <div id="formMessage" runat="server" visible="false"></div>
+
+                                                <!-- FORM -->
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="txtName" runat="server" placeholder="Your Name"></asp:TextBox>
                                                 </div>
+
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" placeholder="Your Email"></asp:TextBox>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject"></asp:TextBox>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <asp:DropDownList ID="ddlInquiry" runat="server">
+                                                        <asp:ListItem Text="Select Inquiry Type" Value="" />
+                                                        <asp:ListItem Text="General Inquiry" />
+                                                        <asp:ListItem Text="Investor Relations" />
+                                                        <asp:ListItem Text="Project Investment" />
+                                                        <asp:ListItem Text="Partnership Opportunity" />
+                                                        <asp:ListItem Text="Services Inquiry" />
+                                                    </asp:DropDownList>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <asp:TextBox ID="txtMessage" runat="server"
+                                                        TextMode="MultiLine" Rows="6"
+                                                        placeholder="Your Message"></asp:TextBox>
+                                                </div>
+
+                                                <!-- Honeypot -->
+                                                <asp:TextBox ID="txtBot" runat="server" Style="display: none;"></asp:TextBox>
+
+                                                <asp:Button ID="btnSend" runat="server" Text="Send Message"
+                                                    CssClass="btn-submit" OnClick="btnSend_Click" />
+
                                             </div>
-                                            <div class="wpcf7-response-output" aria-hidden="true"></div>
                                         </form>
                                     </div>
                                 </div>
@@ -108,9 +320,7 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text">54B, Tailstoi Town 5238
-                                        <br />
-                                        La city, IA 522364</p>
+                                    <p class="mb_50 fs_18 te-bn-text">New York, NY 10001</p>
                                 </div>
 
                             </div>
@@ -126,7 +336,7 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text"><a href="tel:01372466790">01372.466.790</a></p>
+                                    <p class="mb_50 fs_18 te-bn-text"><a href="tel:+1(555)1234567">+1 (555) 123-4567</a></p>
                                 </div>
 
                             </div>
@@ -142,14 +352,112 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text"><a href="mailto:info@example.com">info@example.com</a></p>
+                                    <p class="mb_50 fs_18 te-bn-text"><a href="mailto:investors@aghinvest.com">investors@aghinvest.com</a></p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+
             </div>
+            <section class="office-hours-section">
+                <div class="office-hours-box">
+                    <h3>Office Hours</h3>
+
+                    <div class="hours-row">
+                        <span>Monday – Friday</span>
+                        <strong>9:00 AM – 6:00 PM EST</strong>
+                    </div>
+
+                    <div class="hours-row">
+                        <span>Saturday</span>
+                        <strong>10:00 AM – 2:00 PM EST</strong>
+                    </div>
+
+                    <div class="hours-row">
+                        <span>Sunday</span>
+                        <strong>Closed</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+
+                <!-- ================= FAQ ================= -->
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+
+                <div class="faq-grid">
+
+                    <div class="faq-card">
+                        <h4>What is the minimum investment amount?</h4>
+                        <p>
+                            Investment minimums vary by opportunity and fund structure.
+                Please contact our investor relations team for specific details
+                about current offerings.
+                        </p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h4>How long does the investment process typically take?</h4>
+                        <p>
+                            From initial inquiry to capital deployment typically takes
+                4–8 weeks, depending on due diligence requirements and
+                investor documentation.
+                        </p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h4>What types of real estate does AGH invest in?</h4>
+                        <p>
+                            We focus on commercial, healthcare, mixed-use, and residential
+                properties in Morocco's high-growth urban markets, with
+                particular emphasis on smart cities and special economic zones.
+                        </p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h4>How often do investors receive updates?</h4>
+                        <p>
+                            Investors receive quarterly performance reports, annual
+                audited financial statements, and access to our investor
+                portal for real-time project tracking.
+                        </p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h4>Do you offer co-investment opportunities?</h4>
+                        <p>
+                            Yes, we structure co-investment opportunities alongside
+                our Fund vehicle. Contact our team to discuss options
+                tailored to your investment profile.
+                        </p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h4>What is your track record?</h4>
+                        <p>
+                            Our team brings decades of combined experience in real estate
+                development and investment. Detailed performance metrics
+                and case studies are available upon request.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ================= CTA ================= -->
+                <div class="faq-cta">
+                    <h2>Ready to Explore Opportunities?</h2>
+                    <p>
+                        Whether you're an accredited investor, institutional partner,
+            or service provider, we'd love to discuss how AGH can support
+            your real estate goals.
+                    </p>
+                </div>
+
+            </section>
         </section>
     </div>
 

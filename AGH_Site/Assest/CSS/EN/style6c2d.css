@@ -77,12 +77,12 @@ body {
 a,
 a:active,
 a:focus {
-  text-decoration: none;
-  outline: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  color: #2B2D42;
+	text-decoration: none;
+	outline: none;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	color: #ffffff;
 }
 
 a:hover {
@@ -105,7 +105,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	line-height: 1.25em;
 	margin: 0px;
 	background: none;
-	color: #172b56;
+	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -6621,12 +6621,13 @@ cite.projectdetails-1-author-name {
 	opacity: 0.6;
 }
 
-.footer-style-two .about-widget .inner-box{
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
+	.footer-style-two .about-widget .inner-box {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 4rem 0 0 0;
+	}
 
 .footer-style-two .about-widget .inner-box p{
 	position: relative;
@@ -18277,10 +18278,19 @@ figure{
 
 
 /** impactful-section **/
+section {
+	background: #f6f6f6;
+}
 
-.impactful-section{
+.gap-6 {
+	gap: calc(.25rem*6);
+	display: flex;
+}
+
+.impactful-section {
 	position: relative;
 	padding: 55px 0px 100px 0px;
+	background: #f6f6f6;
 }
 
 .impactful-section .content-box{

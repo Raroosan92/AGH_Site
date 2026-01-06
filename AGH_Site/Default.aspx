@@ -1,6 +1,274 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MainMaster.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AGH_Site.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        /* =========================
+   SECTION
+========================= */
+        .features-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            padding: 70px 2%;
+                background: #f6f6f6;
+        }
+
+        /* =========================
+   CARD
+========================= */
+        .feature-card {
+            background: #242321;
+            color: #ffffff;
+            padding: 38px 32px;
+            min-height: 360px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            /* Hover effect */
+            .feature-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            }
+
+            /* =========================
+   TEXT
+========================= */
+            .feature-card h3 {
+                font-size: 30px;
+                line-height: 1.2;
+                font-weight: 700;
+                margin-bottom: 24px;
+            }
+
+            .feature-card p {
+                font-size: 15.5px;
+                line-height: 1.7;
+                opacity: 0.95;
+                color: white;
+            }
+
+            /* Learn more */
+            .feature-card .link {
+                display: block;
+                margin-top: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        /* =========================
+   RESPONSIVE
+========================= */
+        @media (max-width: 1200px) {
+            .features-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .features-section {
+                grid-template-columns: 1fr;
+                padding: 50px 20px;
+            }
+
+            .feature-card {
+                min-height: auto;
+            }
+        }
+        /* =========================
+   GRID
+========================= */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            padding: 0px 0%;
+            background-image: url('/Assest/Images/uploads/2023/09/vector-2-1.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+
+        /* =========================
+   BOX
+========================= */
+        .info-box {
+            border: 1px solid #d3c7bd;
+            padding: 36px 40px;
+            background: transparent;
+            transition: box-shadow .35s ease, transform .35s ease;
+        }
+
+            .info-box:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 18px 40px rgba(0,0,0,.08);
+            }
+
+        /* =========================
+   ICON
+========================= */
+        .icon {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 20px;
+        }
+
+            .icon svg {
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: #6c0f25;
+                stroke-width: 2;
+                transition: transform .45s ease, stroke .45s ease;
+            }
+
+        /* ✨ ICON ANIMATION */
+        .info-box:hover .icon svg {
+            transform: rotate(-8deg) scale(1.15);
+            stroke: #8b1c36;
+        }
+
+        /* =========================
+   TEXT
+========================= */
+        .info-box h4 {
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #000;
+        }
+
+        .info-box p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #3f3a36;
+            max-width: 520px;
+        }
+
+        /* =========================
+   RESPONSIVE
+========================= */
+        @media (max-width: 900px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+                padding: 60px 24px;
+            }
+        }
+
+
+
+
+
+        /* =========================
+   SECTION
+========================= */
+        .advisory-section {
+            padding: 90px 2%;
+        }
+
+        /* =========================
+   HEADER
+========================= */
+        .advisory-header {
+            max-width: 820px;
+            margin-bottom: 70px;
+        }
+
+            .advisory-header h2 {
+                font-size: 44px;
+                font-weight: 700;
+                margin-bottom: 18px;
+                color: #111;
+            }
+
+            .advisory-header p {
+                font-size: 18px;
+                line-height: 1.7;
+                color: #5a524c;
+            }
+
+        /* =========================
+   GRID
+========================= */
+        .advisory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+
+        /* =========================
+   BOX
+========================= */
+        .service-box {
+            border: 1px solid #d2c7be;
+            padding: 40px 34px;
+            background: transparent;
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+            .service-box:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 20px 45px rgba(0,0,0,.08);
+            }
+
+        /* =========================
+   ICON
+========================= */
+        .icon {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 26px;
+        }
+
+            .icon svg {
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: #6c0f25;
+                stroke-width: 2;
+                transition: transform .45s ease, stroke .45s ease;
+            }
+
+        /* ✨ ICON HOVER ONLY */
+        .service-box:hover .icon svg {
+            transform: translateY(-6px) scale(1.12);
+            stroke: #8b1c36;
+        }
+
+        /* =========================
+   TITLE
+========================= */
+        .service-box h4 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        /* =========================
+   RESPONSIVE
+========================= */
+        @media (max-width: 1100px) {
+            .advisory-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .advisory-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .advisory-header h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -9,7 +277,7 @@
         <div class="wrapper-box">
             <div class="hidden-sidebar-close"><span class="fal fa-times"></span></div>
             <div class="logo">
-                <a href="../index.html" title="Buildnox">
+                <a href="Default.aspx" title="Buildnox">
                     <img src="Assest/Images/uploads/2023/03/logo.png" alt="logo" style="" /></a>
             </div>
             <div class="content">
@@ -136,6 +404,7 @@
                                         <div class="content-box">
                                             <h2 class="te-banner-title">AGH</h2>
                                             <h3 class="te-banner-text">Atlas Global Holdings</h3>
+                                            <h4 class="te-banner-text">Building Long-Term Partnerships Through Strategic Real Estate Investment</h4>
                                             <div class="btn-box">
                                                 <a href="Projects.aspx" class="yt-btn-title-v1">view Projects</a>
                                             </div>
@@ -149,6 +418,9 @@
                 </div>
             </div>
         </section>
+
+
+
         <section class="elementor-section elementor-top-section elementor-element elementor-element-bd20caa elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="bd20caa" data-element_type="section">
             <div class="elementor-container elementor-column-gap-no">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e49b685" data-id="e49b685" data-element_type="column">
@@ -169,7 +441,7 @@
                                             <div class="col-lg-6 col-md-6 col-sm-12 text-column">
                                                 <div class="text-box">
                                                     <p class="te-text">
-                                                       From opportunity assessment to development execution and long-term asset management, AGH delivers clarity, capital, and confidence.
+                                                        From opportunity assessment to development execution and long-term asset management, AGH delivers clarity, capital, and confidence.
                                                     </p>
                                                 </div>
                                             </div>
@@ -184,16 +456,44 @@
             </div>
         </section>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-45ccc7b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45ccc7b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="elementor-container elementor-column-gap-no">
+            <div class="features-section">
+                <div class="feature-card">
+                    <h3>Strategic<br>
+                        Vision</h3>
+                    <p>
+                        We build sustainable real estate ventures through thoughtful capital deployment and strategic asset selection that create lasting value
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Partnership<br>
+                        Focus</h3>
+                    <p>
+                        We partner with investors, operators, and communities to unlock opportunities that thrive long into the future — collaboration at every step.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Investment<br>
+                        Philosophy</h3>
+                    <p>
+                        Empowering Long-Term Growth
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>3% For The<br>
+                        Planet</h3>
+                    <p>
+                        We invest with purpose, guided by community, accountability, and long-term impact.
+            <span class="link">Learn more</span>
+                    </p>
+                </div>
+            </div>
+            <%--<div class="elementor-container elementor-column-gap-no">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b775897" data-id="b775897" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-984e3dd elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="984e3dd" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">We specialize in
-                                            <br />
-                                    these fields.</h2>
-                            </div>
-                        </div>
+                         
                         <section class="elementor-section elementor-inner-section elementor-element elementor-element-422f4f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="422f4f6" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-default">
                                 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-629f592" data-id="629f592" data-element_type="column">
@@ -229,134 +529,16 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-a15f7d3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a15f7d3" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-590b351" data-id="590b351" data-element_type="column">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-5be42f4 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="5be42f4" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
 
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                       Market Research & Consulting         </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-a73d4d4 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="a73d4d4" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Investment & Funding Strategy         </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                     <%--   <div class="elementor-element elementor-element-ae646aa elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="ae646aa" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Development & Project Execution         </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>--%>
-                                    </div>
-                                </div>
-                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-64a114d" data-id="64a114d" data-element_type="column">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-0f69f98 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="0f69f98" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                         Development & Project Execution        </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-d52b5f7 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="d52b5f7" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Asset Management & Monetization         </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                      <%--  <div class="elementor-element elementor-element-28acfde elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="28acfde" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Architectural Designs        </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>--%>
-                                    </div>
-                                </div>
-                                <%--<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d621265" data-id="d621265" data-element_type="column">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-c295bc7 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="c295bc7" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Residence Condo        </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-1c5ad41 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="1c5ad41" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Functional Space        </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-4284c33 elementor-widget elementor-widget-buildnox_feature_list_widget" data-id="4284c33" data-element_type="widget" data-widget_type="buildnox_feature_list_widget.default">
-                                            <div class="elementor-widget-container">
-
-
-                                                <ul class="te-bn-flist list-1 fs_20 fw_medium c_dark2 list-alignment">
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                        Innovative Approvach        </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>--%>
-                            </div>
-                        </section>
                     </div>
                 </div>
-            </div>
+            </div>--%>
         </section>
+
+
+
+
+
         <section class="elementor-section elementor-top-section elementor-element elementor-element-8c93749 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8c93749" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3449c9a" data-id="3449c9a" data-element_type="column">
@@ -369,27 +551,86 @@
                                 <section class="impactful-section build-transform-section">
                                     <div class="auto-container">
                                         <div class="row align-items-center">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
                                                 <div class="content-box">
-                                                    <h2 class="te-title">Who We Are</h2>
+                                                    <h2 class="te-title">Investment Strategy</h2>
                                                     <p class="te-text">
-                                                        AGH is a U.S.-based real estate advisory and development firm with a strategic focus on Morocco as the <b>gateway to Africa.</b> We combine international standards with deep local expertise to help investors identify, fund, build, and manage high-potential <b>commercial and medical real estate projects.</b>
+                                                        Grounded in trust and ingenuity, our platform delivers disciplined performance and superior risk-adjusted returns.
                                                     </p>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-lg-6 col-md-6 col-sm-12 image-column">
+                                                <div class="info-grid">
+
+                                                    <div class="info-box">
+                                                        <div class="icon">
+                                                            <!-- target -->
+                                                            <svg viewBox="0 0 24 24">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <circle cx="12" cy="12" r="4"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <h4>Investment Approach</h4>
+                                                        <p>
+                                                            We create value by identifying real estate opportunities that deliver durable cash flow and long-term performance
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="info-box">
+                                                        <div class="icon">
+                                                            <!-- handshake -->
+                                                            <svg viewBox="0 0 24 24">
+                                                                <path d="M8 12l2 2c1 1 3 1 4 0l3-3"></path>
+                                                                <path d="M2 12l6-6 6 6"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <h4>Local Expertise</h4>
+                                                        <p>
+                                                            Aligned with best-in-class local operators possessing deep market and asset-level expertise
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="info-box">
+                                                        <div class="icon">
+                                                            <!-- location -->
+                                                            <svg viewBox="0 0 24 24">
+                                                                <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"></path>
+                                                                <circle cx="12" cy="9" r="2.5"></circle>
+                                                            </svg>
+                                                        </div>
+                                                        <h4>Targeted Opportunities</h4>
+                                                        <p>
+                                                            We focus on markets and assets where fundamentals, structure, and timing create compelling investment opportunities
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="info-box">
+                                                        <div class="icon">
+                                                            <!-- check -->
+                                                            <svg viewBox="0 0 24 24">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <path d="M8 12l3 3 5-5"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <h4>Capital Alignment</h4>
+                                                        <p>
+                                                            Our team, partners, and stakeholders invest alongside our investors in every venture
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <%--  <div class="col-lg-6 col-md-6 col-sm-12 image-column">
                                                 <div class="image-box">
                                                     <figure class="image">
                                                         <img decoding="async" src="Assest/Images/uploads/2023/09/vector-2-1.png" alt="Awesome Image">
                                                     </figure>
-                                                    <%--<div class="experience-box">
+
+                                                    <div class="experience-box">
                                                         <h4 class="exper-text">Projects Completed</h4>
                                                         <h1 class="exper-title">791</h1>
-                                                    </div>--%>
-
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </div>--%>
                                         </div>
                                     </div>
                                 </section>
@@ -400,87 +641,95 @@
                 </div>
             </div>
         </section>
-      <%--  <section class="elementor-section elementor-top-section elementor-element elementor-element-f108e1b elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f108e1b" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a997227" data-id="a997227" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-28435bb elementor-widget elementor-widget-buildnox_ta_architect_creative" data-id="28435bb" data-element_type="widget" data-settings="{&quot;buildnox_layout_margin&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_margin_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_margin_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;buildnox_layout_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_ta_architect_creative.default">
-                            <div class="elementor-widget-container">
 
-                                <%-- creative-style-two -%>
-                                <section class="creative-style-two build-creative-section">
-                                    <div class="auto-container">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-5 col-md-12 col-sm-12 image-column">
-                                                <div class="image-box">
-                                                    <figure class="image image-1">
-                                                        <img decoding="async" src="Assest/Images/uploads/2023/09/creative-3.jpg" alt="Awesome Image">
-                                                    </figure>
-                                                    <figure class="image image-2">
-                                                        <img decoding="async" src="Assest/Images/uploads/2023/09/creative-4.jpg" alt="Awesome Image">
-                                                    </figure>
-                                                </div>
-                                            </div>
+        <section class="impactful-section build-transform-section">
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-7 col-sm-12 content-column">
+                        <div class="content-box">
+                            <h2 class="te-title">Who We Are</h2>
+                            <p class="te-text">
+                                AGH is a U.S.-based real estate advisory and development firm with a strategic focus on Morocco as the <b>gateway to Africa.</b> We combine international standards with deep local expertise to help investors identify, fund, build, and manage high-potential <b>commercial and medical real estate projects.</b>
+                            </p>
+                        </div>
+                    </div>
 
-                                            <div class="col-lg-7 col-md-12 col-sm-12 content-column">
-                                                <div class="content-box">
-                                                    <span class="title-text">Architectureal Creative</span>
-                                                    <div class="row clearfix">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item">
-                                                                <div class="icon-box">+</div>
-                                                                <h5 class="te-title">Functional Spaces</h5>
-                                                                <p class="te-text">Through a unique combination of engirneering, construction and design disciplines and expertise</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item">
-                                                                <div class="icon-box">+</div>
-                                                                <h5 class="te-title">Functional Spaces</h5>
-                                                                <p class="te-text">Through a unique combination of engirneering, construction and design disciplines and expertise</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item">
-                                                                <div class="icon-box">+</div>
-                                                                <h5 class="te-title">Functional Spaces</h5>
-                                                                <p class="te-text">Through a unique combination of engirneering, construction and design disciplines and expertise</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item">
-                                                                <div class="icon-box">+</div>
-                                                                <h5 class="te-title">Functional Spaces</h5>
-                                                                <p class="te-text">Through a unique combination of engirneering, construction and design disciplines and expertise</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item">
-                                                                <div class="icon-box">+</div>
-                                                                <h5 class="te-title">Functional Spaces</h5>
-                                                                <p class="te-text">Through a unique combination of engirneering, construction and design disciplines and expertise</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item">
-                                                                <div class="icon-box">+</div>
-                                                                <h5 class="te-title">Functional Spaces</h5>
-                                                                <p class="te-text">Through a unique combination of engirneering, construction and design disciplines and expertise</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <%-- creative-style-two end -%>
-                            </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 image-column">
+                        <div class="image-box">
+                            <figure class="image">
+                                <img decoding="async" src="Assest/Images/uploads/2023/09/shape-10.png" alt="Awesome Image">
+                            </figure>
+                            <%--<div class="experience-box">
+                                                <h4 class="exper-text">Projects Completed</h4>
+                                                <h1 class="exper-title">791</h1>
+                                            </div>--%>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>--%>
+        </section>
+
+        <section class="advisory-section">
+
+            <div class="advisory-header">
+                <h2>Real Estate Advisory Services</h2>
+                <p>
+                    We offer investors the flexibility to invest alongside us or engage our platform to support and manage their deals,
+            syndications, and funds—backed by deep real estate and capital markets expertise
+                </p>
+            </div>
+
+            <div class="advisory-grid">
+
+                <div class="service-box">
+                    <div class="icon">
+                        <!-- chart -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17l6-6 4 4 7-7"></path>
+                            <path d="M14 4h7v7"></path>
+                        </svg>
+                    </div>
+                    <h4>Market Research & Consulting</h4>
+                </div>
+
+                <div class="service-box">
+                    <div class="icon">
+                        <!-- dollar -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2v20"></path>
+                            <path d="M17 7a5 5 0 0 0-10 0c0 5 10 3 10 8a5 5 0 0 1-10 0"></path>
+                        </svg>
+                    </div>
+                    <h4>Investment & Funding Strategy</h4>
+                </div>
+
+                <div class="service-box">
+                    <div class="icon">
+                        <!-- building -->
+                        <svg viewBox="0 0 24 24">
+                            <rect x="6" y="3" width="12" height="18"></rect>
+                            <path d="M9 7h1M9 11h1M9 15h1M14 7h1M14 11h1M14 15h1"></path>
+                        </svg>
+                    </div>
+                    <h4>Development & Project Execution</h4>
+                </div>
+
+                <div class="service-box">
+                    <div class="icon">
+                        <!-- users -->
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="9" cy="8" r="3"></circle>
+                            <circle cx="17" cy="8" r="3"></circle>
+                            <path d="M2 20c0-4 7-6 7-6"></path>
+                            <path d="M22 20c0-4-7-6-7-6"></path>
+                        </svg>
+                    </div>
+                    <h4>Asset Management & Monetization</h4>
+                </div>
+
+            </div>
+        </section>
+
         <section class="elementor-section elementor-top-section elementor-element elementor-element-4067426 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4067426" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25748db" data-id="25748db" data-element_type="column">
@@ -502,7 +751,7 @@
                                                     typeset industry. Lorem Ipsum
                                                 </p>
                                             </div>
-                                            <div class="filters">
+                                            <%--<div class="filters">
                                                 <ul class="filter-tabs filter-btns clearfix filter-align">
                                                     <li class="bn-tabs-btn filter active" data-role="button" data-filter=".all">All</li>
 
@@ -514,20 +763,16 @@
 
                                                     <li class="bn-tabs-btn filter" data-role="button" data-filter=".city-marks">City Marks</li>
                                                 </ul>
-                                            </div>
+                                            </div>--%>
                                         </div>
                                         <div class="sortable-masonry">
                                             <div class="items-container row">
-
-
-
-
                                                 <div class="masonry-item all palace planning  col-lg-4 col-md-6">
                                                     <div class="project-block-seven">
                                                         <div class="inner-box">
                                                             <figure class="image-box">
-                                                                <a href="Assest/Images/uploads/2023/09/gallery-126.jpg" class="lightbox-image" data-fancybox="gallery">
-                                                                    <img fetchpriority="high" decoding="async" width="370" height="279" src="Assest/Images/uploads/2023/09/gallery-126.jpg" class="attachment-buildnox_370x279 size-buildnox_370x279 wp-post-image" alt="" />
+                                                                <a href="Assest/Images/uploads/2023/09/project1.png" class="lightbox-image" data-fancybox="gallery">
+                                                                    <img fetchpriority="high" decoding="async" width="370" height="279" src="Assest/Images/uploads/2023/09/project1.png" class="attachment-buildnox_370x279 size-buildnox_370x279 wp-post-image" alt="" />
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
@@ -537,18 +782,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
-
-
-
                                                 <div class="masonry-item all color-scheme  col-lg-4 col-md-6">
                                                     <div class="project-block-seven">
                                                         <div class="inner-box">
                                                             <figure class="image-box">
-                                                                <a href="Assest/Images/uploads/2023/09/gallery-127.jpg" class="lightbox-image" data-fancybox="gallery">
-                                                                    <img decoding="async" width="370" height="442" src="Assest/Images/uploads/2023/09/gallery-127.jpg" class="attachment-buildnox_370x442 size-buildnox_370x442 wp-post-image" alt="" />
+                                                                <a href="Assest/Images/uploads/2023/09/project2.png" class="lightbox-image" data-fancybox="gallery">
+                                                                    <img decoding="async" width="370" height="442" src="Assest/Images/uploads/2023/09/project2.png" class="attachment-buildnox_370x442 size-buildnox_370x442 wp-post-image" alt="" />
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
@@ -558,18 +797,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
-
-
-
                                                 <div class="masonry-item all city-marks  col-lg-4 col-md-6">
                                                     <div class="project-block-seven">
                                                         <div class="inner-box">
                                                             <figure class="image-box">
-                                                                <a href="Assest/Images/uploads/2023/09/gallery-128.jpg" class="lightbox-image" data-fancybox="gallery">
-                                                                    <img decoding="async" width="370" height="279" src="Assest/Images/uploads/2023/09/gallery-128.jpg" class="attachment-buildnox_370x279 size-buildnox_370x279 wp-post-image" alt="" />
+                                                                <a href="Assest/Images/uploads/2023/09/project3.png" class="lightbox-image" data-fancybox="gallery">
+                                                                    <img decoding="async" width="370" height="279" src="Assest/Images/uploads/2023/09/project3.png" class="attachment-buildnox_370x279 size-buildnox_370x279 wp-post-image" alt="" />
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
@@ -579,13 +812,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
-
-
-
-                                                <div class="masonry-item all city-marks palace  col-lg-4 col-md-6">
+                                                <%--<div class="masonry-item all city-marks palace  col-lg-4 col-md-6">
                                                     <div class="project-block-seven">
                                                         <div class="inner-box">
                                                             <figure class="image-box">
@@ -600,12 +827,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
-
-
-
                                                 <div class="masonry-item all color-scheme  col-lg-4 col-md-6">
                                                     <div class="project-block-seven">
                                                         <div class="inner-box">
@@ -621,12 +842,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
-
-
-
                                                 <div class="masonry-item all city-marks palace  col-lg-4 col-md-6">
                                                     <div class="project-block-seven">
                                                         <div class="inner-box">
@@ -641,7 +856,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>--%>
 
 
 

@@ -156,12 +156,24 @@
 .footer-widget{
 	position:relative;
 }
-.footer-widget ul,
-.footer-widget ol{
-	position:relative;
-	margin:0px;
-	padding:0px;
+	.footer-widget ul, .footer-widget ol {
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		display: grid;
+		grid-auto-flow: column;
+	}
+.footer-column {
+	margin: 6rem 0 0 0;
 }
+.footer-widget ul, .footer-widget ol {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	grid-auto-flow: column;
+}
+
 .footer-widget ul li,
 .footer-widget ol li{
     display: block;

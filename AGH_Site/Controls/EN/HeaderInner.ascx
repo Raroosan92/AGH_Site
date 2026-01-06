@@ -18,7 +18,7 @@
 
                 <div class="logo-box">
                     <div class="logo">
-                        <a href="../index.html" title="Buildnox">
+                        <a href="../../Default.aspx" title="Buildnox">
                             <img src="Assest/Images/uploads/2023/03/logo.png" alt="logo" style="" /></a>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
 
     </li>
     <li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-153 dropdown">
-        <a href="../../Projects.aspx">Projects<span class="menu-item_plus"></span></a>
+        <a href="../../investments.aspx">Investments<span class="menu-item_plus"></span></a>
 
     </li>
 
@@ -71,7 +71,7 @@
                 <div class="inner-container d-flex align-items-center justify-content-between">
                     <div class="logo-box">
                         <div class="logo">
-                            <a href="../index.html" title="Buildnox">
+                            <a href="../../Default.aspx" title="Buildnox">
                                 <img src="Assest/Images/uploads/2023/03/logo.png" alt="logo" style="" /></a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
 
         <nav class="menu-box">
             <div class="nav-logo">
-                <a href="../index.html" title="Buildnox">
+                <a href="../../Default.aspx" title="Buildnox">
                     <img src="Assest/Images/uploads/2023/03/logo-light.png" alt="logo" style="" /></a>
             </div>
             <div class="menu-outer">
@@ -141,7 +141,7 @@
     <div class="wrapper-box">
         <div class="hidden-sidebar-close"><span class="fal fa-times"></span></div>
         <div class="logo">
-            <a href="../index.html" title="Buildnox">
+            <a href="../../Default.aspx" title="Buildnox">
                 <img src="Assest/Images/uploads/2023/03/logo.png" alt="logo" style="" /></a>
         </div>
         <div class="content">

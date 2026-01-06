@@ -770,6 +770,9 @@
     <Content Include="Assest\Images\uploads\2023\09\page-title-2.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\page-title-3.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\page-title.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\project1.png" />
+    <Content Include="Assest\Images\uploads\2023\09\project2.png" />
+    <Content Include="Assest\Images\uploads\2023\09\project3.png" />
     <Content Include="Assest\Images\uploads\2023\09\service-13.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\service-14.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\service-15.jpg" />
@@ -959,6 +962,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="google22e3f0ac626b01ab.html" />
+    <Content Include="investments.aspx" />
     <Content Include="Projects.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Test.aspx" />
@@ -1012,6 +1016,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="investments.aspx.cs">
+      <DependentUpon>investments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investments.aspx.designer.cs">
+      <DependentUpon>investments.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPages\MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>

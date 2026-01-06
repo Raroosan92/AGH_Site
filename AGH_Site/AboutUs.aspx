@@ -2,8 +2,308 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-           <link rel="stylesheet" href="/Assest/CSS/EN/post-127705bca.css?ver=1748181741" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Assest/CSS/EN/post-127705bca.css?ver=1748181741" type="text/css" media="all" />
+    <style>
+        h2 {
+            color: #070707 !important;
+        }
 
+
+        .what-we-do {
+            padding: 80px 6%;
+            /*background: #f3efe9;*/
+        }
+
+        /* TITLES */
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 40px 0 25px;
+            color: #000;
+        }
+
+        .mt-lg {
+            margin-top: 70px;
+        }
+
+        /* ======================
+   PROCESS
+====================== */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .process-box {
+            /*background: #efe9e3;*/
+            border: 1px solid #d1c6bd;
+            padding: 26px 22px;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+            .process-box:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 16px 34px rgba(0,0,0,.08);
+            }
+
+        .step {
+            font-size: 22px;
+            font-weight: 700;
+            color: #000000;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .process-box h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .process-box p {
+            font-size: 13.5px;
+            line-height: 1.6;
+            color: #4a443f;
+        }
+
+        /* ======================
+   SPECIALIZATIONS
+====================== */
+        .specialization-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .special-box {
+            /*background: #efe9e3;*/
+            border: 1px solid #d1c6bd;
+            padding: 32px;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+            .special-box:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 18px 38px rgba(0,0,0,.08);
+            }
+
+        .icon {
+            font-size: 28px;
+            margin-bottom: 16px;
+            color: #6c0f25;
+        }
+
+        .special-box h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        .special-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #4a443f;
+        }
+
+        /* ======================
+   RESPONSIVE
+====================== */
+        @media (max-width: 1100px) {
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .process-grid,
+            .specialization-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+        }
+
+        .agh-section {
+            padding: 90px 6%;
+            /*background: #f3efe9;*/
+        }
+
+        /* ================= TITLES ================= */
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            color: #111;
+        }
+
+        .spaced {
+            margin-top: 80px;
+        }
+
+        /* ================= SERVICES ================= */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            /*background: #f7f3ee;*/
+            border: 1px solid #d2c7bd;
+            padding: 28px;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+            .service-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 18px 36px rgba(0,0,0,.08);
+            }
+
+            .service-card h4 {
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                color: black;
+            }
+
+            .service-card p {
+                font-size: 14px;
+                line-height: 1.6;
+                color: #4a443f;
+            }
+
+        /* ================= WHY AGH ================= */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px 50px;
+        }
+
+        .why-item {
+            border-left: 2px solid #6c0f25;
+            padding-left: 18px;
+        }
+
+            .why-item h4 {
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 6px;
+                color: black;
+            }
+
+            .why-item p {
+                font-size: 14px;
+                line-height: 1.6;
+                color: #4a443f;
+            }
+
+        /* ================= IMPACT ================= */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-bottom: 28px;
+        }
+
+        .impact-card {
+            /* background: #6c0f25; */
+            color: #000000;
+            padding: 26px;
+            box-shadow: 0 18px 36px rgb(0 0 0 / 39%);
+            border: 1px solid;
+        }
+
+            .impact-card h3 {
+                font-size: 26px;
+                font-weight: 700;
+                margin-bottom: 6px;
+                color: black;
+            }
+
+            .impact-card p {
+                font-size: 14px;
+                opacity: .9;
+            }
+
+        .impact-note {
+            max-width: 820px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #4a443f;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 1100px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        /* =========================
+   IMPACT HIGHLIGHT BOX
+========================= */
+        .impact-highlight {
+            margin-top: 40px;
+            padding: 46px 60px;
+            background: linear-gradient( 189deg, #939393 0%, #ffffff 100%);
+            color: #ffffff;
+            position: relative;
+        }
+
+            /* خط جانبي تنفيذي */
+            .impact-highlight::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 6px;
+                height: 100%;
+                background: #ffffff;
+                opacity: 0.8;
+            }
+
+            .impact-highlight p {
+                max-width: 1100px;
+                font-size: 17px;
+                line-height: 1.8;
+                margin: 0;
+                opacity: 0.95;
+            }
+
+        /* =========================
+   RESPONSIVE
+========================= */
+        @media (max-width: 768px) {
+            .impact-highlight {
+                padding: 32px 26px;
+            }
+
+                .impact-highlight p {
+                    font-size: 15px;
+                }
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="page-title">
@@ -13,7 +313,9 @@
                 <div class="content-box">
                     <h1>Who We Are</h1>
                     <ul class="bread-crumb clearfix">
-                        <li class="breadcrumb-item"><a href="Default.aspx">Home &nbsp;</a></li><li class="breadcrumb-item">Who We Are</li>                    </ul>
+                        <li class="breadcrumb-item"><a href="Default.aspx">Home &nbsp;</a></li>
+                        <li class="breadcrumb-item">Who We Are</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -35,11 +337,11 @@
                                                     <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>AGH</h6>
 
                                                     <div class="main____title ">
-                                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">We are AGH - Atlas Global Holdings, Inc.</h2>
+                                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Who We Are</h2>
                                                     </div>
 
 
-                                                    <p class="mb_50 fs_18 te-bn-text">AGH is a hybrid real estate brokerage and development firm. We don’t just transact properties — we create them. Our expertise spans every stage of the investment lifecycle, helping clients reduce risk, secure capital, and maximize returns.</p>
+                                                    <p class="mb_50 fs_18 te-bn-text">A U.S.-based investment firm transforming undervalued real estate into high-quality assets across Morocco's fastest-growing markets.</p>
                                                 </div>
 
                                             </div>
@@ -48,7 +350,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-6801565 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6801565" data-element_type="section">
+                        <%--<section class="elementor-section elementor-inner-section elementor-element elementor-element-6801565 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6801565" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-no">
                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d930c21" data-id="d930c21" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -96,12 +398,172 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section>--%>
                     </div>
                 </div>
             </div>
         </section>
-        <%--<section class="elementor-section elementor-top-section elementor-element elementor-element-83a06c1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="83a06c1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <%--<section class="elementor-section elementor-top-section elementor-element elementor-element-38d1a52 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="38d1a52" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-no">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-588e1fa" data-id="588e1fa" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-e37d8f0 elementor-widget elementor-widget-buildnox_hero_title" data-id="e37d8f0" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
+                            <div class="elementor-widget-container">
+
+
+                                <div class="build-title-wrap">
+
+                                    <div class="main____title ">
+                                        <h1 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Our Team</h1>
+                                    </div>
+
+
+                                    <p class="mb_50 fs_18 te-bn-text">Creative commercial &amp; residential architecture
+                                        <br />
+                                        professional design team</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-46bba9f elementor-widget elementor-widget-buildnox_team_grid" data-id="46bba9f" data-element_type="widget" data-widget_type="buildnox_team_grid.default">
+                            <div class="elementor-widget-container">
+
+
+                                <!-- team-section -->
+                                <section class="team-section p-0 m-0 text-center build-team-section">
+
+                                    <div class="inner-container">
+                                        <div class="row clearfix">
+                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                                                <div class="team-block-one">
+                                                    <div class="inner-box">
+                                                        <figure class="image-box">
+                                                            <img fetchpriority="high" decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-10.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
+                                                        <div class="lower-content">
+                                                            <h3 class="build-te-title">Michal Hooper</h3>
+                                                            <span class="designation build-te-designation">Archicture</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                                                <div class="team-block-one">
+                                                    <div class="inner-box">
+                                                        <figure class="image-box">
+                                                            <img decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-9.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
+                                                        <div class="lower-content">
+                                                            <h3 class="build-te-title">Areon Finch</h3>
+                                                            <span class="designation build-te-designation">Archicture</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                                                <div class="team-block-one">
+                                                    <div class="inner-box">
+                                                        <figure class="image-box">
+                                                            <img decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-8.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
+                                                        <div class="lower-content">
+                                                            <h3 class="build-te-title">Ben Duck</h3>
+                                                            <span class="designation build-te-designation">Archicture</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                                                <div class="team-block-one">
+                                                    <div class="inner-box">
+                                                        <figure class="image-box">
+                                                            <img loading="lazy" decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-7.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
+                                                        <div class="lower-content">
+                                                            <h3 class="build-te-title">Marry Jefferson</h3>
+                                                            <span class="designation build-te-designation">Designer</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <!-- team-sectione end -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>--%>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-0690c2f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0690c2f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-no">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1fc6617" data-id="1fc6617" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-0d5f8c2 elementor-widget elementor-widget-image" data-id="0d5f8c2" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="521" height="485" src="/assest/images/uploads/2023/08/creative-1.jpg" class="attachment-full size-full wp-image-5976" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-1.jpg 521w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-1-300x279.jpg 300w" sizes="(max-width: 521px) 100vw, 521px" />
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-8622752 elementor-widget__width-initial elementor-widget elementor-widget-buildnox_hero_title" data-id="8622752" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
+                            <div class="elementor-widget-container">
+
+
+                                <div class="build-title-wrap">
+
+                                    <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>Mission:</h6>
+                                    <p class="mb_50 fs_18 te-bn-text">To create valuable, income-generating real estate assets in Morocco's emerging urban centers, prioritizing investor returns, operational excellence, and positive community impact.</p>
+                                    <%--<p class="mb_50 fs_18 te-bn-text">Local networks to navigate regulations and execution.</p>--%>
+                                    <%--<p class="mb_50 fs_18 te-bn-text">Specialized focus on medical real estate, a sector with exceptional growth.</p>--%>
+                                    <%--<p class="mb_50 fs_18 te-bn-text">Full-cycle solutions — research → capital → build → management.</p>--%>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-4a9d678 elementor-widget elementor-widget-buildnox_button_widget" data-id="4a9d678" data-element_type="widget" data-settings="{&quot;btn_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_button_widget.default">
+                            <div class="elementor-widget-container">
+
+                                <!-- creative-section -->
+                                <%-- <div class="creative-section p-0 m-0 link-btn build-button">
+                                    <div class="left-column p-0 m-0">
+                                        <a class="build-btn" href="../about/index.html">discover more</a>
+                                    </div>
+                                </div>--%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-25192bd" data-id="25192bd" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-7510bc3 elementor-widget elementor-widget-buildnox_hero_title" data-id="7510bc3" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
+                            <div class="elementor-widget-container">
+
+
+                                <div class="build-title-wrap">
+                                    <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>Vision</h6>
+
+                                    <div class="main____title ">
+                                        <p class="mb_50 fs_18 te-bn-text">To unlock Morocco's potential as a gateway to African investment by connecting U.S. capital with transformative real estate opportunities that build wealth and strengthen communities.</p>
+                                        <%--<p class="mb_50 fs_18 te-bn-text">Rapidly growing demand for healthcare and commercial spaces.</p>--%>
+                                        <%--<p class="mb_50 fs_18 te-bn-text">Strong government incentives supporting infrastructure and medical projects.</p>--%>
+                                        <%--<h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Strong government incentives supporting infrastructure and medical projects.</h2>--%>
+                                    </div>
+
+
+                                    <%--<p class="mb_50 fs_18 te-bn-text">Temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip.</p>--%>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-de644f1 elementor-widget elementor-widget-image" data-id="de644f1" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="630" height="408" src="/assest/images/uploads/2023/08/creative-2.jpg" class="attachment-full size-full wp-image-6008" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-2.jpg 630w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-2-300x194.jpg 300w" sizes="(max-width: 630px) 100vw, 630px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-83a06c1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="83a06c1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-container elementor-column-gap-no">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-602bdaa" data-id="602bdaa" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -123,18 +585,28 @@
                                                 <div class="build-title-wrap">
 
                                                     <div class="main____title ">
-                                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Exterior / Interior /</h2>
+                                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Our Story</h2>
                                                     </div>
 
 
-                                                    <p class="mb_50 fs_18 te-bn-text">The home page of an architecture website serves as the first impression for visitors and should provide a compelling overview of the architecture firm and its offerings.</p>
+                                                    <p class="mb_50 fs_18 te-bn-text"><b>Focused on Opportunity</b></p>
+                                                    <p class="mb_50">Atlas Global Holdings (AGH) was founded on a simple insight: Morocco's rapid urbanization and economic growth create exceptional opportunities for disciplined investors. While many overlook the North African market, we see a region with rising demand for modern real estate, strong demographic tailwinds, and significant value creation potential.</p>
+                                                    <p class="mb_50">We target Morocco's strategic growth corridors—smart city developments, Special Economic Zones (SEZs), and infrastructure hubs—where international investment meets local expertise to deliver outsized returns.</p>
                                                 </div>
+                                                <div class="build-title-wrap">
 
+
+
+
+                                                    <p class="mb_50 fs_18 te-bn-text"><b>Client-Focused, Results-Driven</b></p>
+                                                    <p class="mb_50">Our approach combines international investment standards with deep local knowledge. We partner with U.S. investors, family offices, and institutions to identify, acquire, and develop high-potential commercial, medical, residential, and mixed-use properties.</p>
+                                                    <p class="mb_50">From market analysis and due diligence to project execution and asset management, we handle the full investment lifecycle—so our partners can focus on returns.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4f892b9" data-id="4f892b9" data-element_type="column">
+                                <%--<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4f892b9" data-id="4f892b9" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
                                         <div class="elementor-element elementor-element-20108e6 elementor-widget elementor-widget-buildnox_button_widget" data-id="20108e6" data-element_type="widget" data-settings="{&quot;btn_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;0&quot;,&quot;right&quot;:&quot;0&quot;,&quot;bottom&quot;:&quot;5&quot;,&quot;left&quot;:&quot;0&quot;,&quot;isLinked&quot;:false},&quot;btn_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_button_widget.default">
                                             <div class="elementor-widget-container">
@@ -147,10 +619,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--%>
                             </div>
                         </section>
-                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-f70db33 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f70db33" data-element_type="section">
+                        <%--<section class="elementor-section elementor-inner-section elementor-element elementor-element-f70db33 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f70db33" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-default">
                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-bcfe8ed" data-id="bcfe8ed" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -273,173 +745,164 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </section>--%>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-38d1a52 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="38d1a52" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="elementor-container elementor-column-gap-no">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-588e1fa" data-id="588e1fa" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-e37d8f0 elementor-widget elementor-widget-buildnox_hero_title" data-id="e37d8f0" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
-                            <div class="elementor-widget-container">
-
-
-                                <div class="build-title-wrap">
-
-                                    <div class="main____title ">
-                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Our Team</h2>
-                                    </div>
-
-
-                                    <p class="mb_50 fs_18 te-bn-text">Creative commercial &amp; residential architecture
-                                        <br />
-                                        professional design team</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-46bba9f elementor-widget elementor-widget-buildnox_team_grid" data-id="46bba9f" data-element_type="widget" data-widget_type="buildnox_team_grid.default">
-                            <div class="elementor-widget-container">
-
-
-                                <!-- team-section -->
-                                <section class="team-section p-0 m-0 text-center build-team-section">
-
-                                    <div class="inner-container">
-                                        <div class="row clearfix">
-                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                                                <div class="team-block-one">
-                                                    <div class="inner-box">
-                                                        <figure class="image-box">
-                                                            <img fetchpriority="high" decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-10.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-10-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
-                                                        <div class="lower-content">
-                                                            <h3 class="build-te-title">Michal Hooper</h3>
-                                                            <span class="designation build-te-designation">Archicture</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                                                <div class="team-block-one">
-                                                    <div class="inner-box">
-                                                        <figure class="image-box">
-                                                            <img decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-9.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-9-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
-                                                        <div class="lower-content">
-                                                            <h3 class="build-te-title">Areon Finch</h3>
-                                                            <span class="designation build-te-designation">Archicture</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                                                <div class="team-block-one">
-                                                    <div class="inner-box">
-                                                        <figure class="image-box">
-                                                            <img decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-8.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-8-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
-                                                        <div class="lower-content">
-                                                            <h3 class="build-te-title">Ben Duck</h3>
-                                                            <span class="designation build-te-designation">Archicture</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                                                <div class="team-block-one">
-                                                    <div class="inner-box">
-                                                        <figure class="image-box">
-                                                            <img loading="lazy" decoding="async" width="335" height="338" src="/assest/images/uploads/2023/03/team-7.jpg" class="attachment-buildnox_335x338 size-buildnox_335x338 wp-post-image" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7.jpg 335w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-297x300.jpg 297w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-84x84.jpg 84w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/03/team-7-130x130.jpg 130w" sizes="(max-width: 335px) 100vw, 335px" /></figure>
-                                                        <div class="lower-content">
-                                                            <h3 class="build-te-title">Marry Jefferson</h3>
-                                                            <span class="designation build-te-designation">Designer</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </section>
-                                <!-- team-sectione end -->
-
-
-                            </div>
-                        </div>
+                        </section>--%>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-0690c2f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0690c2f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="elementor-container elementor-column-gap-no">
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1fc6617" data-id="1fc6617" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-0d5f8c2 elementor-widget elementor-widget-image" data-id="0d5f8c2" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="521" height="485" src="/assest/images/uploads/2023/08/creative-1.jpg" class="attachment-full size-full wp-image-5976" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-1.jpg 521w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-1-300x279.jpg 300w" sizes="(max-width: 521px) 100vw, 521px" />
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-8622752 elementor-widget__width-initial elementor-widget elementor-widget-buildnox_hero_title" data-id="8622752" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
-                            <div class="elementor-widget-container">
+        <section class="what-we-do ">
 
+            <!-- HEADER -->
+            <h2 class="section-title">What We Do</h2>
+            <h3 class="section-subtitle">The Full Development Lifecycle</h3>
 
-                                <div class="build-title-wrap">
-
-                                    <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>Our Advantage:</h6>
-                                    <p class="mb_50 fs_18 te-bn-text">U.S.-based credibility with international standards.</p>
-                                    <p class="mb_50 fs_18 te-bn-text">Local networks to navigate regulations and execution.</p>
-                                    <p class="mb_50 fs_18 te-bn-text">Specialized focus on medical real estate, a sector with exceptional growth.</p>
-                                    <p class="mb_50 fs_18 te-bn-text">Full-cycle solutions — research → capital → build → management.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4a9d678 elementor-widget elementor-widget-buildnox_button_widget" data-id="4a9d678" data-element_type="widget" data-settings="{&quot;btn_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_button_widget.default">
-                            <div class="elementor-widget-container">
-
-                                <!-- creative-section -->
-                               <%-- <div class="creative-section p-0 m-0 link-btn build-button">
-                                    <div class="left-column p-0 m-0">
-                                        <a class="build-btn" href="../about/index.html">discover more</a>
-                                    </div>
-                                </div>--%>
-
-
-                            </div>
-                        </div>
-                    </div>
+            <!-- PROCESS -->
+            <div class="process-grid">
+                <div class="process-box">
+                    <span class="step">1</span>
+                    <h4>Acquisition</h4>
+                    <p>Identify and acquire undervalued real estate assets at significant discounts to replacement cost</p>
                 </div>
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-25192bd" data-id="25192bd" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-7510bc3 elementor-widget elementor-widget-buildnox_hero_title" data-id="7510bc3" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
-                            <div class="elementor-widget-container">
 
+                <div class="process-box">
+                    <span class="step">2</span>
+                    <h4>Design & Development</h4>
+                    <p>Develop and construct sustainable, high-quality properties using modern systems and best practices</p>
+                </div>
 
-                                <div class="build-title-wrap">
-                                    <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>Why Morocco?</h6>
+                <div class="process-box">
+                    <span class="step">3</span>
+                    <h4>Leasing & Sales</h4>
+                    <p>Lease and sell assets to local and international investors, maximizing occupancy and returns</p>
+                </div>
 
-                                    <div class="main____title ">
-                                        <p class="mb_50 fs_18 te-bn-text">A stable, investor-friendly gateway to Africa.</p>
-                                        <p class="mb_50 fs_18 te-bn-text">Rapidly growing demand for healthcare and commercial spaces.</p>
-                                        <p class="mb_50 fs_18 te-bn-text">Strong government incentives supporting infrastructure and medical projects.</p>
-                                        <%--<h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Strong government incentives supporting infrastructure and medical projects.</h2>--%>
-                                    </div>
-
-
-                                    <%--<p class="mb_50 fs_18 te-bn-text">Temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip.</p>--%>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-de644f1 elementor-widget elementor-widget-image" data-id="de644f1" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="630" height="408" src="/assest/images/uploads/2023/08/creative-2.jpg" class="attachment-full size-full wp-image-6008" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-2.jpg 630w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-2-300x194.jpg 300w" sizes="(max-width: 630px) 100vw, 630px" />
-                            </div>
-                        </div>
-                    </div>
+                <div class="process-box">
+                    <span class="step">4</span>
+                    <h4>Asset Management</h4>
+                    <p>Optimize operations and performance throughout the holding period and exit strategy</p>
                 </div>
             </div>
+
+            <!-- SPECIALIZATIONS -->
+            <h3 class="section-subtitle mt-lg">Our Specializations</h3>
+
+            <div class="specialization-grid">
+
+                <div class="special-box">
+                    <div class="icon">🏢</div>
+                    <h4>Commercial Real Estate</h4>
+                    <p>Office complexes, retail centers, and business parks in high-growth urban corridors</p>
+                </div>
+
+                <div class="special-box">
+                    <div class="icon">🏥</div>
+                    <h4>Healthcare Facilities</h4>
+                    <p>Modern medical centers and specialized healthcare properties serving growing demand</p>
+                </div>
+
+                <div class="special-box">
+                    <div class="icon">⚡</div>
+                    <h4>Mixed-Use Development</h4>
+                    <p>Integrated residential, commercial, and hospitality properties in strategic locations</p>
+                </div>
+
+                <div class="special-box">
+                    <div class="icon">📈</div>
+                    <h4>Smart Cities & SEZs</h4>
+                    <p>Properties in Special Economic Zones and smart city developments with government support</p>
+                </div>
+
+            </div>
         </section>
+        <section class="agh-section">
+
+            <!-- ================= Investor Services ================= -->
+            <h2 class="section-title">Our Investor Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Project Sourcing</h4>
+                    <p>Pre-vetted, off-market real estate opportunities aligned with your investment criteria and return targets</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Investment Fund Setup</h4>
+                    <p>Establish and manage dedicated investment funds tailored to your capital deployment strategy and timeline</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Due Diligence & Analysis</h4>
+                    <p>Comprehensive market analysis, financial modeling, and risk assessment for every investment opportunity</p>
+                </div>
+            </div>
+
+            <!-- ================= Why AGH ================= -->
+            <h2 class="section-title spaced">Why AGH</h2>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <h4>Local Expertise, Global Standards</h4>
+                    <p>We combine deep knowledge of regional real estate markets with international investment best practices and institutional-grade governance.</p>
+                </div>
+
+                <div class="why-item">
+                    <h4>Aligned Incentives</h4>
+                    <p>Our team invests alongside our partners in every venture, ensuring our success is directly tied to investor outcomes.</p>
+                </div>
+
+                <div class="why-item">
+                    <h4>Strategic Market Focus</h4>
+                    <p>We concentrate on high-growth urban centers and government-backed development zones where fundamentals, timing, and capital alignment create exceptional opportunities.</p>
+                </div>
+
+                <div class="why-item">
+                    <h4>Innovation & Sustainability</h4>
+                    <p>We integrate ESG principles, green construction practices, and sustainable development to maximize long-term asset value and community impact.</p>
+                </div>
+
+                <div class="why-item">
+                    <h4>Full-Cycle Execution</h4>
+                    <p>From acquisition through exit, we manage every phase of the investment lifecycle, reducing complexity and risk for our partners.</p>
+                </div>
+
+                <div class="why-item">
+                    <h4>Transparent Partnership</h4>
+                    <p>We maintain open communication, regular reporting, and accountability throughout the investment period and beyond.</p>
+                </div>
+            </div>
+
+            <!-- ================= Impact ================= -->
+            <h2 class="section-title spaced">Our Impact</h2>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3>$2.5B+</h3>
+                    <p>Total Transaction Value</p>
+                </div>
+
+                <div class="impact-card">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="impact-card">
+                    <h3>15+</h3>
+                    <p>Urban Markets</p>
+                </div>
+            </div>
+
+
+            <div class="impact-highlight">
+                <p>
+                    Beyond financial returns, we are committed to creating lasting value for the communities we invest in.
+        Our projects generate employment, improve urban infrastructure, and support economic growth through
+        responsible development practices.
+                </p>
+            </div>
+
+
+        </section>
+
         <%--<section class="elementor-section elementor-top-section elementor-element elementor-element-ba833b7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ba833b7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a99450" data-id="7a99450" data-element_type="column">

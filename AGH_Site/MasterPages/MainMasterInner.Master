@@ -512,8 +512,7 @@
 </head>
 
 <body class="wp-singular page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-11381 wp-theme-buildnox menu-layer elementor-default elementor-kit-6 elementor-page elementor-page-11381">
-    <form id="form1" runat="server">
-        <div>
+         <div>
             <div class="page-wrapper">
                 <div class="loader-wrap">
                     <div class="preloader">
@@ -644,7 +643,6 @@
     <script type="text/javascript" src="/Assest/JS/faqs-tab8a54.js?ver=1.0.0" id="faqs-accordion-js"></script>
     <script type="text/javascript" defer src="/Assest/JS/formsd87f.js?ver=4.9.9" id="mc4wp-forms-api-js"></script>
 
-
-    </form>
+         
 </body>
 </html>
