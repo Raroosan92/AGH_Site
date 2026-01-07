@@ -87,7 +87,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
             padding: 0px 0%;
-            background-image: url('/Assest/Images/uploads/2023/09/vector-2-1.png');
+            /*background-image: url('/Assest/Images/uploads/2023/09/vector-2-1.png');*/
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: contain;
@@ -399,12 +399,12 @@
 
                                 <%-- banner-style-35 --%>
                                 <section class="banner-style-35 p_relative build-banner-section">
-                                    <div class="bg-layer" style="background-image: url(Assest/Images/uploads/2023/09/banner-34.jpg);"></div>
+                                    <div class="bg-layer" style="background-image: url(Assest/Images/uploads/2023/09/banner-19.jpg);"></div>
                                     <div class="outer-container p_relative clearfix">
                                         <div class="content-box">
                                             <h2 class="te-banner-title">AGH</h2>
-                                            <h3 class="te-banner-text">Atlas Global Holdings</h3>
-                                            <h4 class="te-banner-text">Building Long-Term Partnerships Through Strategic Real Estate Investment</h4>
+                                            <%--<h3 class="te-banner-text">Atlas Global Holdings</h3>--%>
+                                            <h3 class="te-banner-text">Building Long-Term Partnerships <br />Through Strategic <br /> Real Estate Investment</h3>
                                             <div class="btn-box">
                                                 <a href="Projects.aspx" class="yt-btn-title-v1">view Projects</a>
                                             </div>
@@ -456,7 +456,16 @@
             </div>
         </section>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-45ccc7b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45ccc7b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            
+            
+
+
+
+
+
+
             <div class="features-section">
+               
                 <div class="feature-card">
                     <h3>Strategic<br>
                         Vision</h3>
@@ -558,7 +567,7 @@
                                                         Grounded in trust and ingenuity, our platform delivers disciplined performance and superior risk-adjusted returns.
                                                     </p>
                                                 </div>
-
+                                                <br />
                                                 <div class="info-grid">
 
                                                     <div class="info-box">
@@ -642,14 +651,14 @@
             </div>
         </section>
 
-        <section class="impactful-section build-transform-section">
+        <%--<section class="impactful-section build-transform-section">
             <div class="auto-container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-7 col-sm-12 content-column">
                         <div class="content-box">
                             <h2 class="te-title">Who We Are</h2>
                             <p class="te-text">
-                                AGH is a U.S.-based real estate advisory and development firm with a strategic focus on Morocco as the <b>gateway to Africa.</b> We combine international standards with deep local expertise to help investors identify, fund, build, and manage high-potential <b>commercial and medical real estate projects.</b>
+                                AGH is a U.S.-based real estate advisory and development firm with a strategic focus on Morocco as the <b>gateway to Africa.</b>  <br />We combine international standards with deep local expertise to help investors identify, fund, build, and manage high-potential <b>commercial and medical real estate projects.</b>
                             </p>
                         </div>
                     </div>
@@ -662,12 +671,12 @@
                             <%--<div class="experience-box">
                                                 <h4 class="exper-text">Projects Completed</h4>
                                                 <h1 class="exper-title">791</h1>
-                                            </div>--%>
+                                            </div>-%>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
 
         <section class="advisory-section">
 
@@ -745,11 +754,11 @@
                                         <div class="upper-box mb_80">
                                             <div class="sec-title">
                                                 <h2 class="main-title">Recent Projects</h2>
-                                                <p class="main-text">
+                                               <%-- <p class="main-text">
                                                     Lorem Ipsum is simply dummy text of the printing and
                                                             <br />
                                                     typeset industry. Lorem Ipsum
-                                                </p>
+                                                </p>--%>
                                             </div>
                                             <%--<div class="filters">
                                                 <ul class="filter-tabs filter-btns clearfix filter-align">
@@ -871,14 +880,14 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-130a19e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="130a19e" data-element_type="section">
+        <%--<section class="elementor-section elementor-top-section elementor-element elementor-element-130a19e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="130a19e" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-71af2c7" data-id="71af2c7" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-e8d9888 elementor-widget elementor-widget-buildnox_funfact" data-id="e8d9888" data-element_type="widget" data-settings="{&quot;general_layout_margin&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_margin_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_margin_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_funfact.default">
                             <div class="elementor-widget-container">
 
-                                <%-- funfact-style-three --%>
+                                <%-- funfact-style-three -%>
                                 <section class="funfact-style-three p-0 m-0 build-section">
                                     <div class="auto-container">
                                         <div class="row clearfix">
@@ -900,7 +909,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <%-- funfact-style-three end --%>
+                                <%-- funfact-style-three end -%>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-ef7294e elementor-absolute elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ef7294e" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="divider.default">
@@ -917,7 +926,7 @@
                         <div class="elementor-element elementor-element-b7c317d elementor-widget elementor-widget-buildnox_funfact" data-id="b7c317d" data-element_type="widget" data-settings="{&quot;general_layout_margin&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_margin_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_margin_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_funfact.default">
                             <div class="elementor-widget-container">
 
-                                <%-- funfact-style-three --%>
+                                <%-- funfact-style-three -%>
                                 <section class="funfact-style-three p-0 m-0 build-section">
                                     <div class="auto-container">
                                         <div class="row clearfix">
@@ -939,7 +948,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <%-- funfact-style-three end --%>
+                                <%-- funfact-style-three end -%>
                             </div>
                         </div>
                     </div>
@@ -949,7 +958,7 @@
                         <div class="elementor-element elementor-element-7b7e48d elementor-widget elementor-widget-buildnox_funfact" data-id="7b7e48d" data-element_type="widget" data-settings="{&quot;general_layout_margin&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_margin_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_margin_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;general_layout_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-widget_type="buildnox_funfact.default">
                             <div class="elementor-widget-container">
 
-                                <%-- funfact-style-three --%>
+                                <%-- funfact-style-three -%>
                                 <section class="funfact-style-three p-0 m-0 build-section">
                                     <div class="auto-container">
                                         <div class="row clearfix">
@@ -971,13 +980,13 @@
                                         </div>
                                     </div>
                                 </section>
-                                <%-- funfact-style-three end --%>
+                                <%-- funfact-style-three end -%>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
         <%--<section class="elementor-section elementor-top-section elementor-element elementor-element-9a983e6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9a983e6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3e61258" data-id="3e61258" data-element_type="column">

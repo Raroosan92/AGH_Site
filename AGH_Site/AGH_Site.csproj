@@ -955,6 +955,8 @@
     <Content Include="Assest\JS\TweenMax.min431f.js" />
     <Content Include="Assest\JS\webpack.runtime.min0d09.js" />
     <Content Include="Assest\JS\wow431f.js" />
+    <Content Include="Assest\zzzz\index-5vaCOisB.js" />
+    <Content Include="Assest\zzzz\index-e8m-ZJSu.css" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Controls\EN\Footer.ascx" />
     <Content Include="Controls\EN\Header.ascx" />

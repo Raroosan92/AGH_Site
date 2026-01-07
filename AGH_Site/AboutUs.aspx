@@ -588,8 +588,9 @@
                                                         <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Our Story</h2>
                                                     </div>
 
-
+                                                    <br />  
                                                     <p class="mb_50 fs_18 te-bn-text"><b>Focused on Opportunity</b></p>
+                                                    <br />
                                                     <p class="mb_50">Atlas Global Holdings (AGH) was founded on a simple insight: Morocco's rapid urbanization and economic growth create exceptional opportunities for disciplined investors. While many overlook the North African market, we see a region with rising demand for modern real estate, strong demographic tailwinds, and significant value creation potential.</p>
                                                     <p class="mb_50">We target Morocco's strategic growth corridors—smart city developments, Special Economic Zones (SEZs), and infrastructure hubs—where international investment meets local expertise to deliver outsized returns.</p>
                                                 </div>
@@ -599,6 +600,7 @@
 
 
                                                     <p class="mb_50 fs_18 te-bn-text"><b>Client-Focused, Results-Driven</b></p>
+                                                    <br />
                                                     <p class="mb_50">Our approach combines international investment standards with deep local knowledge. We partner with U.S. investors, family offices, and institutions to identify, acquire, and develop high-potential commercial, medical, residential, and mixed-use properties.</p>
                                                     <p class="mb_50">From market analysis and due diligence to project execution and asset management, we handle the full investment lifecycle—so our partners can focus on returns.</p>
                                                 </div>
@@ -872,7 +874,7 @@
             </div>
 
             <!-- ================= Impact ================= -->
-            <h2 class="section-title spaced">Our Impact</h2>
+            <%--<h2 class="section-title spaced">Our Impact</h2>
 
             <div class="impact-grid">
                 <div class="impact-card">
@@ -898,7 +900,7 @@
         Our projects generate employment, improve urban infrastructure, and support economic growth through
         responsible development practices.
                 </p>
-            </div>
+            </div>--%>
 
 
         </section>
@@ -974,7 +976,7 @@
                 </div>
             </div>
         </section>--%>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-d7a7799 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d7a7799" data-element_type="section">
+        <%--<section class="elementor-section elementor-top-section elementor-element elementor-element-d7a7799 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d7a7799" data-element_type="section">
             <div class="elementor-container elementor-column-gap-no">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8bd6077" data-id="8bd6077" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -999,7 +1001,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
     </div>
 
 
