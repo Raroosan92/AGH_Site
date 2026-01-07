@@ -22,7 +22,7 @@ namespace AGH_Site
         {
             formMessage.Visible = true;
 
-            // Anti-spam
+            //  Anti-spam
             if (!string.IsNullOrEmpty(txtBot.Text))
                 return;
 
