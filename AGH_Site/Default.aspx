@@ -281,12 +281,12 @@
                     <img src="Assest/Images/uploads/2023/03/logo.png" alt="logo" style="" /></a>
             </div>
             <div class="content">
-                <div class="about-widget-two sidebar-widget">
+               <%-- <div class="about-widget-two sidebar-widget">
                     <h3>Finding The Best 
                                 <br>
                         Construction Services </h3>
                     <div class="text">We denounce with righteous indignation and dislike men who we are to beguiled demoralized by the charms of pleasures that moment, so we blinded desires, that they indignations.</div>
-                </div>
+                </div>--%>
                 <%-- Contact Widget --%>
                 <div class="sidebar-contact-info mb_40">
                     <h4 class="fs_22 fw_medium mb_20">Contact Us</h4>
@@ -298,8 +298,7 @@
                                 </div>
                                 <div class="text">
                                     <p>
-                                        54B, Tailstoi Town 5238 MT,<br>
-                                        La city, IA 522364
+                                        2406 Autumn oaks trail<br />Arlington, Texas 76006
                                     </p>
                                 </div>
                             </div>
@@ -310,7 +309,7 @@
                                     <img src="Assest/Images/buildnox/icons/icon-8__envelop.png" alt="Awesome Image">
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                    <p><a href="mailto:Info@aghinvest.com">Info@aghinvest.com</a></p>
                                 </div>
                             </div>
                         </li>
@@ -320,7 +319,7 @@
                                     <img src="Assest/Images/buildnox/icons/icon-9__phone.png" alt="Awesome Image">
                                 </div>
                                 <div class="text">
-                                    <p><a href="tel:+1800-456-7890">+1800-456-7890</a></p>
+                                    <p><a href="tel:+1(214)2336721">+1 (214) 233-6721</a></p>
                                 </div>
                             </div>
                         </li>
@@ -337,7 +336,7 @@
                     </ul>
                 </div>
                 <%-- Newsletter Widget --%>
-                <div class="newsletter-widget">
+                <%--<div class="newsletter-widget">
                     <h4 class="fs_22 fw_medium mb_20">Newsletter Subscription</h4>
                     <script>(function () {
                             window.mc4wp = window.mc4wp || {
@@ -366,8 +365,8 @@
                                     <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label>
                             <input type="hidden" name="_mc4wp_timestamp" value="1757700768" /><input type="hidden" name="_mc4wp_form_id" value="84" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div>
                         </form>--%>
-                    <%-- / Mailchimp for WordPress Plugin --%>
-                </div>
+                    <%-- / Mailchimp for WordPress Plugin -%>
+                </div>--%>
             </div>
         </div>
     </section>

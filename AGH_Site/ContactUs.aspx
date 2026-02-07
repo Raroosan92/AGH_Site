@@ -320,7 +320,7 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text">New York, NY 10001</p>
+                                    <p class="mb_50 fs_18 te-bn-text">2406 Autumn oaks trail<br />Arlington, Texas 76006</p>
                                 </div>
 
                             </div>
@@ -336,7 +336,7 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text"><a href="tel:+1(555)1234567">+1 (555) 123-4567</a></p>
+                                    <p class="mb_50 fs_18 te-bn-text"><a href="tel:+1(214)2336721">+1 (214) 233-6721</a></p>
                                 </div>
 
                             </div>
@@ -352,7 +352,7 @@
                                     </div>
 
 
-                                    <p class="mb_50 fs_18 te-bn-text"><a href="mailto:investors@aghinvest.com">investors@aghinvest.com</a></p>
+                                    <p class="mb_50 fs_18 te-bn-text"><a href="mailto:Info@aghinvest.com">Info@aghinvest.com</a></p>
                                 </div>
 
                             </div>

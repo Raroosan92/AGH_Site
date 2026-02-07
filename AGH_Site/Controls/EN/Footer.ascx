@@ -44,7 +44,7 @@
                     <div class="inner-box">
                         <div class="single-item">
                             <p>Call Us</p>
-                            <h4><a href="tel:+1(800)456-7890">+1 (800) 456-7890</a></h4>
+                            <h4><a href="tel:+1(214)2336721">+1 (214) 233-6721</a></h4>
                         </div>
                         <div class="single-item">
                             <p>Send a message</p>
@@ -114,13 +114,13 @@
                 </div>
 
 
-                <section class="footer-widget">
                     <div class="copyright">
 
 
                         <p><b>Important Disclosure:</b> Past performance is not indicative of future results. All investments involve risk, including possible loss of principal. Please consult with a financial advisor before making investment decisions. AGH operates in compliance with all applicable securities laws and regulations.</p>
                     </div>
-                </section>
+                <%--<section class="footer-widget">
+                </section>--%>
             </div>
         </div>
     </div>
