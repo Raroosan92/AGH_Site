@@ -70,7 +70,7 @@
                                     <li id="menu-item-16069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16069"><a href="../../Default.aspx">Home<span class="menu-item_plus"></span></a></li>
                                     <li id="menu-item-16070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16070"><a href="../../AboutUs.aspx">About<span class="menu-item_plus"></span></a></li>
                                     <li id="menu-item-16071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16071"><a href="../../Services.aspx">Services<span class="menu-item_plus"></span></a></li>
-                                    <li id="menu-item-16072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16072"><a href="../../Projects.aspx">Projects<span class="menu-item_plus"></span></a></li>
+                                    <li id="menu-item-16072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16072"><a href="../../investments.aspx">Investments<span class="menu-item_plus"></span></a></li>
                                     <li id="menu-item-16073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16073"><a href="../../ContactUs.aspx">ContactUs<span class="menu-item_plus"></span></a></li>
                                 </ul>
                             </div>

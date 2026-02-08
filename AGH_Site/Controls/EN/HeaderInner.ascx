@@ -100,7 +100,7 @@
         <nav class="menu-box">
             <div class="nav-logo">
                 <a href="../../Default.aspx" title="Buildnox">
-                    <img src="Assest/Images/uploads/2023/03/logo-light.png" alt="logo" style="" /></a>
+                    <img src="Assest/Images/uploads/2023/03/logo.png?v=1.1.0" alt="AGH" style="" /></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->

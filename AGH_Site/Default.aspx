@@ -405,7 +405,7 @@
                                             <%--<h3 class="te-banner-text">Atlas Global Holdings</h3>--%>
                                             <h3 class="te-banner-text">Building Long-Term Partnerships <br />Through Strategic <br /> Real Estate Investment</h3>
                                             <div class="btn-box">
-                                                <a href="Projects.aspx" class="yt-btn-title-v1">view Projects</a>
+                                                <a href="investments.aspx" class="yt-btn-title-v1">Explore Investments</a>
                                             </div>
                                         </div>
                                     </div>
@@ -752,7 +752,7 @@
                                     <div class="auto-container">
                                         <div class="upper-box mb_80">
                                             <div class="sec-title">
-                                                <h2 class="main-title">Recent Projects</h2>
+                                                <h2 class="main-title">Elegant Architectural Design</h2>
                                                <%-- <p class="main-text">
                                                     Lorem Ipsum is simply dummy text of the printing and
                                                             <br />
@@ -784,8 +784,8 @@
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
-                                                                <h4 class="bn-project-title"><a href="../project/refine-elegance/index.html">Refine Elegance</a></h4>
-                                                                <p class="bn-project-cat">Palace, Planning</p>
+                                                                <h4 class="bn-project-title"><a href="">Commercial Architecture</a></h4>
+                                                                <p class="bn-project-cat">Modern Commercial Excellence</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -799,8 +799,8 @@
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
-                                                                <h4 class="bn-project-title"><a href="../project/refine-elegance-2/index.html">Refine Elegance</a></h4>
-                                                                <p class="bn-project-cat">Color Scheme</p>
+                                                                <h4 class="bn-project-title"><a href="">Medical Facility Design</a></h4>
+                                                                <p class="bn-project-cat">Advanced Medical Infrastructure</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -814,8 +814,8 @@
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
-                                                                <h4 class="bn-project-title"><a href="../project/refine-elegance-4/index.html">Refine Elegance</a></h4>
-                                                                <p class="bn-project-cat">City Marks</p>
+                                                                <h4 class="bn-project-title"><a href="">Residential Development</a></h4>
+                                                                <p class="bn-project-cat">Elevated Residential Living</p>
                                                             </div>
                                                         </div>
                                                     </div>

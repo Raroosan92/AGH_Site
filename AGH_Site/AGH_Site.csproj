@@ -965,7 +965,6 @@
     <Content Include="Global.asax" />
     <Content Include="google22e3f0ac626b01ab.html" />
     <Content Include="investments.aspx" />
-    <Content Include="Projects.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -1039,13 +1038,6 @@
     </Compile>
     <Compile Include="MasterPages\MainMasterInner.Master.designer.cs">
       <DependentUpon>MainMasterInner.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Projects.aspx.cs">
-      <DependentUpon>Projects.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Projects.aspx.designer.cs">
-      <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services.aspx.cs">
