@@ -38,14 +38,14 @@
    TEXT
 ========================= */
             .feature-card h3 {
-                font-size: 30px;
+                /*font-size: 30px;*/
                 line-height: 1.2;
                 font-weight: 700;
                 margin-bottom: 24px;
             }
 
             .feature-card p {
-                font-size: 15.5px;
+                /*font-size: 15.5px;*/
                 line-height: 1.7;
                 opacity: 0.95;
                 color: white;
@@ -136,7 +136,7 @@
    TEXT
 ========================= */
         .info-box h4 {
-            font-size: 15px;
+            /*font-size: 15px;*/
             letter-spacing: 2px;
             text-transform: uppercase;
             font-weight: 700;
@@ -145,7 +145,7 @@
         }
 
         .info-box p {
-            font-size: 16px;
+            /*font-size: 16px;*/
             line-height: 1.7;
             color: #3f3a36;
             max-width: 520px;
@@ -181,14 +181,14 @@
         }
 
             .advisory-header h2 {
-                font-size: 44px;
+                /*font-size: 44px;*/
                 font-weight: 700;
                 margin-bottom: 18px;
                 color: #111;
             }
 
             .advisory-header p {
-                font-size: 18px;
+                /*font-size: 18px;*/
                 line-height: 1.7;
                 color: #5a524c;
             }
@@ -245,7 +245,7 @@
    TITLE
 ========================= */
         .service-box h4 {
-            font-size: 17px;
+            /*font-size: 17px;*/
             font-weight: 600;
             color: #111;
         }
@@ -265,7 +265,7 @@
             }
 
             .advisory-header h2 {
-                font-size: 34px;
+                /*font-size: 34px;*/
             }
         }
     </style>
@@ -440,7 +440,7 @@
                                             <div class="col-lg-6 col-md-6 col-sm-12 text-column">
                                                 <div class="text-box">
                                                     <p class="te-text">
-                                                        From opportunity assessment to development execution and long-term asset management, AGH delivers clarity, capital, and confidence.
+                                                        From opportunity sourcing to project execution, AGH delivers full-cycle real estate solutions for both proprietary investments and third-party clients.
                                                     </p>
                                                 </div>
                                             </div>
@@ -485,7 +485,7 @@
                     <h3>Investment<br>
                         Philosophy</h3>
                     <p>
-                        Empowering Long-Term Growth
+                        Disciplined investments. Strategic execution. Long-term value
                     </p>
                 </div>
 
@@ -557,7 +557,7 @@
 
                                 <%-- impactful-section --%>
                                 <section class="impactful-section build-transform-section">
-                                    <div class="auto-container">
+                                    <div class="auto-container1">
                                         <div class="row align-items-center">
                                             <div class="col-lg-12 col-md-12 col-sm-12 content-column">
                                                 <div class="content-box">
@@ -749,15 +749,13 @@
 
                                 <%-- project-style-12 --%>
                                 <section class="project-style-12 p_relative">
-                                    <div class="auto-container">
+                                    <div class="auto-container1">
                                         <div class="upper-box mb_80">
                                             <div class="sec-title">
                                                 <h2 class="main-title">Elegant Architectural Design</h2>
-                                               <%-- <p class="main-text">
-                                                    Lorem Ipsum is simply dummy text of the printing and
-                                                            <br />
-                                                    typeset industry. Lorem Ipsum
-                                                </p>--%>
+                                                <p class="main-text">
+                                                  In-house architects delivering modern, elegant design tailored to every vision.
+                                                </p>
                                             </div>
                                             <%--<div class="filters">
                                                 <ul class="filter-tabs filter-btns clearfix filter-align">
@@ -784,7 +782,8 @@
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
-                                                                <h4 class="bn-project-title"><a href="">Commercial Architecture</a></h4>
+                                                                <h4 class="bn-project-title">Commercial Architecture</h4>
+                                                                <%--<h4 class="bn-project-title"><a href="">Commercial Architecture</a></h4>--%>
                                                                 <p class="bn-project-cat">Modern Commercial Excellence</p>
                                                             </div>
                                                         </div>
@@ -799,7 +798,8 @@
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
-                                                                <h4 class="bn-project-title"><a href="">Medical Facility Design</a></h4>
+                                                                <h4 class="bn-project-title">Medical Facility Design</h4>
+                                                                <%--<h4 class="bn-project-title"><a href="">Medical Facility Design</a></h4>--%>
                                                                 <p class="bn-project-cat">Advanced Medical Infrastructure</p>
                                                             </div>
                                                         </div>
@@ -814,7 +814,8 @@
                                                                 </a>
                                                             </figure>
                                                             <div class="lower-content bn-project-box">
-                                                                <h4 class="bn-project-title"><a href="">Residential Development</a></h4>
+                                                                <h4 class="bn-project-title">Residential Development</h4>
+                                                                <%--<h4 class="bn-project-title"><a href="">Residential Development</a></h4>--%>
                                                                 <p class="bn-project-cat">Elevated Residential Living</p>
                                                             </div>
                                                         </div>

@@ -633,8 +633,8 @@
         <script type="text/javascript" src="/Assest/JS/jquery-ui-1.9.2.custom.min431f.js?ver=2.1.2" id="jquery-ui-js"></script>
         <script type="text/javascript" src="/Assest/JS/odometer.min431f.js?ver=2.1.2" id="odometer-js"></script>
         <script type="text/javascript" src="/Assest/JS/jquery.marquee.min431f.js?ver=2.1.2" id="jquery-marquee-js"></script>
-        <script type="text/javascript" src="/Assest/JS/script6c2d.js?ver=6.8.2" id="buildnox-main-script-js"></script>
-        <script type="text/javascript" src="/Assest/JS/comment-reply.min6c2d.js?ver=6.8.2" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+        <script type="text/javascript" src="/Assest/JS/script6c2d.js?ver=0.0.1" id="buildnox-main-script-js"></script>
+        <script type="text/javascript" src="/Assest/JS/comment-reply.min6c2d.js?ver=0.0.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
         <script type="text/javascript" src="/Assest/JS/webpack.runtime.min0d09.js?ver=3.29.0" id="elementor-webpack-runtime-js"></script>
         <script type="text/javascript" src="/Assest/JS/frontend-modules.min0d09.js?ver=3.29.0" id="elementor-frontend-modules-js"></script>
         <script type="text/javascript" id="elementor-frontend-js-before">

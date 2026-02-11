@@ -30,34 +30,34 @@
                         </div>
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                               <ul class="navigation">
-    <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3 current-menu-ancestor current-menu-parent menu-item-has-children menu-item-106 dropdown current mega-menu mega-menu-links dropdown mega-columns-4col ">
-        <a href="../../Default.aspx">Home<span class="menu-item_plus"></span></a>
+                                <ul class="navigation">
+                                    <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3 current-menu-ancestor current-menu-parent menu-item-has-children menu-item-106 dropdown current mega-menu mega-menu-links dropdown mega-columns-4col ">
+                                        <a href="../../Default.aspx">Home<span class="menu-item_plus"></span></a>
 
-    </li>
-    <li id="menu-item-11308" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11308 dropdown">
-        <a href="../../AboutUs.aspx">About<span class="menu-item_plus"></span></a>
+                                    </li>
+                                    <li id="menu-item-11308" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11308 dropdown">
+                                        <a href="../../AboutUs.aspx">About<span class="menu-item_plus"></span></a>
 
-    </li>
-    <li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-150 dropdown">
-        <a href="../../Services.aspx">Services<span class="menu-item_plus"></span></a>
+                                    </li>
+                                    <li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-150 dropdown">
+                                        <a href="../../Services.aspx">Services<span class="menu-item_plus"></span></a>
 
-    </li>
-    <li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-153 dropdown">
-        <a href="../../investments.aspx">Investments<span class="menu-item_plus"></span></a>
+                                    </li>
+                                    <li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-153 dropdown">
+                                        <a href="../../investments.aspx">Investments<span class="menu-item_plus"></span></a>
 
-    </li>
+                                    </li>
 
 
-    <li id="menu-item-11309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11309 dropdown">
-        <a href="../../ContactUs.aspx">Contact<span class="menu-item_plus"></span></a>
+                                    <li id="menu-item-11309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11309 dropdown">
+                                        <a href="../../ContactUs.aspx">Contact<span class="menu-item_plus"></span></a>
 
-    </li>
-</ul>
+                                    </li>
+                                </ul>
                             </div>
                         </nav>
                     </div>
-                    <button type="button" class="theme-btn search-toggler ml_30 mr_10"><i class="flaticon-magnifiying-glass"></i></button>
+                    <%--<button type="button" class="theme-btn search-toggler ml_30 mr_10"><i class="flaticon-magnifiying-glass"></i></button>--%>
                     <div class="sidemenu-nav-toggler">
                         <img src="Assest/images/buildnox/icons/icon-4.png" alt="Awesome Image">
                     </div>
@@ -83,7 +83,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                             </nav>
                         </div>
-                        <button type="button" class="theme-btn search-toggler ml_30 mr_10"><i class="flaticon-magnifiying-glass"></i></button>
+                        <%--<button type="button" class="theme-btn search-toggler ml_30 mr_10"><i class="flaticon-magnifiying-glass"></i></button>--%>
                         <div class="sidemenu-nav-toggler">
                             <img src="Assest/images/buildnox/icons/icon-4.png" alt="Awesome Image">
                         </div>
@@ -109,21 +109,20 @@
             <!--Social Links-->
             <div class="social-links">
                 <ul class="clearfix">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61588027797306"><i class="fab  fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/company/atlas-global-holding-inc/about/?viewAsMember=true"><i class="fab  fa-linkedin"></i></a>
+                    </li>
 
+                                    <li>
+                    <a target="_blank" href="https://x.com/AGHinvest">
+                        <svg style="    margin: -7px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<path fill="#ffffff"  d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg></a>
+                </li>
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/"><i class="fab  fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/"><i class="fab  fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.skype.com/"><i class="fab  fa-skype"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.twitter.com/"><i class="fab  fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/"><i class="fab  fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/atlasglobalholdings/"><i class="fab  fa-instagram"></i></a>
                     </li>
 
                 </ul>
@@ -145,7 +144,7 @@
                 <img src="Assest/Images/uploads/2023/03/logo.png" alt="logo" style="" /></a>
         </div>
         <div class="content">
-           <%-- <div class="about-widget-two sidebar-widget">
+            <%-- <div class="about-widget-two sidebar-widget">
                 <h3>Finding The Best 
                             <br>
                     Construction Services </h3>
@@ -162,7 +161,8 @@
                             </div>
                             <div class="text">
                                 <p>
-                                    2406 Autumn oaks trail<br />Arlington, Texas 76006
+                                    2406 Autumn oaks trail<br />
+                                    Arlington, Texas 76006
                                 </p>
                             </div>
                         </div>
@@ -219,7 +219,7 @@
                     })();
                 </script>
                 <%-- Mailchimp for WordPress v4.9.9 - https://wordpress.org/plugins/mailchimp-for-wp/ --%>
-                <%--  <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-84" method="post" data-id="84" data-name="">
+            <%--  <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-84" method="post" data-id="84" data-name="">
                         <div class="mc4wp-form-fields">
                             <input type="email" name="EMAIL" placeholder="Enter your email address" required />
                             <button class="btn-1"><i class="fas fa-paper-plane"></i><span></span></button>
@@ -229,7 +229,7 @@
                                 <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label>
                         <input type="hidden" name="_mc4wp_timestamp" value="1757700768" /><input type="hidden" name="_mc4wp_form_id" value="84" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div>
                     </form>--%>
-                <%-- / Mailchimp for WordPress Plugin -%>
+            <%-- / Mailchimp for WordPress Plugin -%>
             </div>--%>
         </div>
     </div>

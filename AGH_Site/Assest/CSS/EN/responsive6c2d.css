@@ -411,7 +411,8 @@
 		padding-right: 30px;
 	}
 	.main-header .logo img {
-		width: 170px;
+		width: 200px;
+		max-width: 400%;
 	}
 	.project-2-wrap {
 		padding-left: 15px;

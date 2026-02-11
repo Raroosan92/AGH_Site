@@ -43,7 +43,7 @@
                             </div>
                         </nav>
                     </div>
-                    <button type="button" class="theme-btn search-toggler ml_8 mr_10"><i class="flaticon-magnifiying-glass"></i></button>
+                    <%--<button type="button" class="theme-btn search-toggler ml_8 mr_10"><i class="flaticon-magnifiying-glass"></i></button>--%>
 
                     <div class="sidemenu-nav-toggler">
                         <img src="Assest/Images/buildnox/icons/icon-4.png" alt="Awesome Image">
@@ -70,7 +70,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                             </nav>
                         </div>
-                        <button type="button" class="theme-btn search-toggler ml_8 mr_10"><i class="flaticon-magnifiying-glass"></i></button>
+                        <%--<button type="button" class="theme-btn search-toggler ml_8 mr_10"><i class="flaticon-magnifiying-glass"></i></button>--%>
 
                         <div class="sidemenu-nav-toggler">
                             <img src="Assest/Images/buildnox/icons/icon-4.png" alt="Awesome Image">
@@ -100,19 +100,19 @@
                 <ul class="clearfix">
 
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/"><i class="fab  fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61588027797306"><i class="fab  fa-facebook-f"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/"><i class="fab  fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/atlas-global-holding-inc/about/?viewAsMember=true"><i class="fab  fa-linkedin"></i></a>
+                    </li>
+                    
+                    <li>
+                        <a target="_blank" href="https://x.com/AGHinvest">
+                            <svg style="    margin: -7px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path fill="#ffffff"  d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.skype.com/"><i class="fab  fa-skype"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.twitter.com/"><i class="fab  fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/"><i class="fab  fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/atlasglobalholdings/"><i class="fab  fa-instagram"></i></a>
                     </li>
 
                 </ul>

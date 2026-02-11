@@ -252,6 +252,9 @@
     <Content Include="Assest\Fonts\google-fonts\robotoslab-bngmuxzytxpivibgjjsb6ufo5qw54a.woff2" />
     <Content Include="Assest\Images\buildnox\background\bg-4.jpg" />
     <Content Include="Assest\Images\buildnox\favicon.png" />
+    <Content Include="Assest\Images\buildnox\icons\commercial.png" />
+    <Content Include="Assest\Images\buildnox\icons\health.png" />
+    <Content Include="Assest\Images\buildnox\icons\hybrid.png" />
     <Content Include="Assest\Images\buildnox\icons\icon-1.png" />
     <Content Include="Assest\Images\buildnox\icons\icon-106.png" />
     <Content Include="Assest\Images\buildnox\icons\icon-107.png" />
@@ -301,6 +304,8 @@
     <Content Include="Assest\Images\buildnox\icons\menu2.svg" />
     <Content Include="Assest\Images\buildnox\icons\preloader.svg" />
     <Content Include="Assest\Images\buildnox\icons\quote.png" />
+    <Content Include="Assest\Images\buildnox\icons\Smart-Cities.png" />
+    <Content Include="Assest\Images\buildnox\icons\stock.png" />
     <Content Include="Assest\Images\buildnox\icons\text-bg.png" />
     <Content Include="Assest\Images\buildnox\resource\building3.png" />
     <Content Include="Assest\Images\buildnox\shape\shape-1.jpg" />
@@ -310,6 +315,7 @@
     <Content Include="Assest\Images\buildnox\shape\shape-21.png" />
     <Content Include="Assest\Images\buildnox\shape\shape-3.png" />
     <Content Include="Assest\Images\favicon.png" />
+    <Content Include="Assest\Images\uploads\2023\03\Atlas Global Holdings3.svg" />
     <Content Include="Assest\Images\uploads\2023\03\author-1.jpg" />
     <Content Include="Assest\Images\uploads\2023\03\author-2.jpg" />
     <Content Include="Assest\Images\uploads\2023\03\author-8.jpg" />
@@ -375,10 +381,15 @@
     <Content Include="Assest\Images\uploads\2023\03\image-7-960x435.jpg" />
     <Content Include="Assest\Images\uploads\2023\03\image-8-1170x435.jpg" />
     <Content Include="Assest\Images\uploads\2023\03\image-8-570x435.jpg" />
+    <Content Include="Assest\Images\uploads\2023\03\logo-light - Copy.png" />
     <Content Include="Assest\Images\uploads\2023\03\logo-light.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo-light2 - Copy.png" />
     <Content Include="Assest\Images\uploads\2023\03\logo-light2.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo-light3 - Copy.png" />
     <Content Include="Assest\Images\uploads\2023\03\logo-light3.png" />
     <Content Include="Assest\Images\uploads\2023\03\logo.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo00.png" />
+    <Content Include="Assest\Images\uploads\2023\03\logo11.png" />
     <Content Include="Assest\Images\uploads\2023\03\quote.svg" />
     <Content Include="Assest\Images\uploads\2023\03\roller.png" />
     <Content Include="Assest\Images\uploads\2023\03\service-1.jpg" />
@@ -557,6 +568,7 @@
     <Content Include="Assest\Images\uploads\2023\08\brand-5.png" />
     <Content Include="Assest\Images\uploads\2023\08\chooseus-bg.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\contact-1.jpg" />
+    <Content Include="Assest\Images\uploads\2023\08\creative-1 - Copy.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\creative-1.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\creative-2.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\feature-1.jpg" />
@@ -623,6 +635,7 @@
     <Content Include="Assest\Images\uploads\2023\09\banner-31.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\banner-32.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\banner-33.jpg" />
+    <Content Include="Assest\Images\uploads\2023\09\banner-34-1.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\banner-34.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\banner-35.jpg" />
     <Content Include="Assest\Images\uploads\2023\09\banner-36.jpg" />

@@ -9,7 +9,7 @@
                     <h3>AGH</h3>
                     <h5>Atlas Global Holdings</h5>
                     <div data-loc="client/src/components/Footer.tsx:148" class="flex items-center gap-6 col-lg-12 col-md-12 col-sm-12 links-column">
-                        <a data-loc="client/src/components/Footer.tsx:150" href="#" aria-label="LinkedIn" class="text-muted-foreground hover:text-foreground transition-colors">
+                        <a data-loc="client/src/components/Footer.tsx:150" href="https://www.linkedin.com/company/atlas-global-holding-inc/about/?viewAsMember=true" aria-label="LinkedIn" class="text-muted-foreground hover:text-foreground transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5" data-loc="client/src/components/Footer.tsx:54">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect width="4" height="12" x="2" y="9"></rect>
@@ -19,20 +19,21 @@
 
                         </a>
 
-                        <a data-loc="client/src/components/Footer.tsx:150" href="#" aria-label="Twitter" class="text-muted-foreground hover:text-foreground transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5" data-loc="client/src/components/Footer.tsx:55">
+                        <a data-loc="client/src/components/Footer.tsx:150" href="https://x.com/AGHinvest" aria-label="Twitter" class="text-muted-foreground hover:text-foreground transition-colors">
+                           <%-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5" data-loc="client/src/components/Footer.tsx:55">
                                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
 
-                            </svg>
-
+                            </svg>--%>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5" data-loc="client/src/components/Footer.tsx:55"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg>
                         </a>
 
-                        <a data-loc="client/src/components/Footer.tsx:150" href="#" aria-label="Facebook" class="text-muted-foreground hover:text-foreground transition-colors">
+                        <a data-loc="client/src/components/Footer.tsx:150" href="https://www.facebook.com/profile.php?id=61588027797306" aria-label="Facebook" class="text-muted-foreground hover:text-foreground transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5" data-loc="client/src/components/Footer.tsx:56">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
 
                             </svg></a>
-                        <a data-loc="client/src/components/Footer.tsx:150" href="#" aria-label="Instagram" class="text-muted-foreground hover:text-foreground transition-colors">
+                        <a data-loc="client/src/components/Footer.tsx:150" href="https://www.instagram.com/atlasglobalholdings/" aria-label="Instagram" class="text-muted-foreground hover:text-foreground transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-5 h-5" data-loc="client/src/components/Footer.tsx:57">
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
@@ -117,7 +118,8 @@
                     <div class="copyright">
 
 
-                        <p><b>Important Disclosure:</b> Past performance is not indicative of future results. All investments involve risk, including possible loss of principal. Please consult with a financial advisor before making investment decisions. AGH operates in compliance with all applicable securities laws and regulations.</p>
+                        <p><b>Important Disclosure:</b> This website is for informational purposes only and does not constitute an offer to sell or a solicitation to buy any securities.</p>
+                        <%--<p><b>Important Disclosure:</b> Past performance is not indicative of future results. All investments involve risk, including possible loss of principal. Please consult with a financial advisor before making investment decisions. AGH operates in compliance with all applicable securities laws and regulations.</p>--%>
                     </div>
                 <%--<section class="footer-widget">
                 </section>--%>

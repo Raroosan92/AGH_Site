@@ -4,9 +4,9 @@
 
     <link rel="stylesheet" href="/Assest/CSS/EN/post-127705bca.css?ver=1748181741" type="text/css" media="all" />
     <style>
-        h2 {
+       /* h2 {
             color: #070707 !important;
-        }
+        }*/
 
 
         .what-we-do {
@@ -16,13 +16,13 @@
 
         /* TITLES */
         .section-title {
-            font-size: 42px;
+            /*font-size: 42px;*/
             font-weight: 700;
             margin-bottom: 10px;
         }
 
         .section-subtitle {
-            font-size: 18px;
+            /*font-size: 18px;*/
             font-weight: 600;
             margin: 40px 0 25px;
             color: #000;
@@ -54,7 +54,7 @@
             }
 
         .step {
-            font-size: 22px;
+            /*font-size: 22px;*/
             font-weight: 700;
             color: #000000;
             display: block;
@@ -62,14 +62,14 @@
         }
 
         .process-box h4 {
-            font-size: 15px;
+            /*font-size: 15px;*/
             font-weight: 700;
             margin-bottom: 10px;
             color: black;
         }
 
         .process-box p {
-            font-size: 13.5px;
+            /*font-size: 13.5px;*/
             line-height: 1.6;
             color: #4a443f;
         }
@@ -96,20 +96,21 @@
             }
 
         .icon {
-            font-size: 28px;
+            /*font-size: 28px;*/
             margin-bottom: 16px;
             color: #6c0f25;
+            width:16%;
         }
 
         .special-box h4 {
-            font-size: 15px;
+            /*font-size: 15px;*/
             font-weight: 700;
             margin-bottom: 8px;
             color: black;
         }
 
         .special-box p {
-            font-size: 14px;
+            /*font-size: 14px;*/
             line-height: 1.7;
             color: #4a443f;
         }
@@ -129,9 +130,9 @@
                 grid-template-columns: 1fr;
             }
 
-            .section-title {
+           /* .section-title {
                 font-size: 32px;
-            }
+            }*/
         }
 
         .agh-section {
@@ -141,7 +142,7 @@
 
         /* ================= TITLES ================= */
         .section-title {
-            font-size: 28px;
+            /*font-size: 28px;*/
             font-weight: 700;
             margin-bottom: 28px;
             color: #111;
@@ -171,14 +172,14 @@
             }
 
             .service-card h4 {
-                font-size: 15px;
+                /*font-size: 15px;*/
                 font-weight: 700;
                 margin-bottom: 10px;
                 color: black;
             }
 
             .service-card p {
-                font-size: 14px;
+                /*font-size: 14px;*/
                 line-height: 1.6;
                 color: #4a443f;
             }
@@ -196,14 +197,14 @@
         }
 
             .why-item h4 {
-                font-size: 15px;
+                /*font-size: 15px;*/
                 font-weight: 700;
                 margin-bottom: 6px;
                 color: black;
             }
 
             .why-item p {
-                font-size: 14px;
+                /*font-size: 14px;*/
                 line-height: 1.6;
                 color: #4a443f;
             }
@@ -225,20 +226,20 @@
         }
 
             .impact-card h3 {
-                font-size: 26px;
+                /*font-size: 26px;*/
                 font-weight: 700;
                 margin-bottom: 6px;
                 color: black;
             }
 
             .impact-card p {
-                font-size: 14px;
+                /*font-size: 14px;*/
                 opacity: .9;
             }
 
         .impact-note {
             max-width: 820px;
-            font-size: 14px;
+            /*font-size: 14px;*/
             line-height: 1.7;
             color: #4a443f;
         }
@@ -285,7 +286,7 @@
 
             .impact-highlight p {
                 max-width: 1100px;
-                font-size: 17px;
+                /*font-size: 17px;*/
                 line-height: 1.8;
                 margin: 0;
                 opacity: 0.95;
@@ -299,9 +300,9 @@
                 padding: 32px 26px;
             }
 
-                .impact-highlight p {
+               /* .impact-highlight p {
                     font-size: 15px;
-                }
+                }*/
         }
     </style>
 </asp:Content>
@@ -311,10 +312,10 @@
             <div class="bg-layer" style="background-image: url('/assest/images/uploads/2023/09/page-title.jpg');"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h1>Who We Are</h1>
+                    <h1 style="color: black;">Who We Are</h1>
                     <ul class="bread-crumb clearfix">
                         <li class="breadcrumb-item"><a href="Default.aspx">Home &nbsp;</a></li>
-                        <li class="breadcrumb-item">Who We Are</li>
+                        <li style="color: black;" class="breadcrumb-item">Who We Are</li>
                     </ul>
                 </div>
             </div>
@@ -501,7 +502,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-0d5f8c2 elementor-widget elementor-widget-image" data-id="0d5f8c2" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="521" height="485" src="/assest/images/uploads/2023/08/creative-1.jpg" class="attachment-full size-full wp-image-5976" alt="" srcset="https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-1.jpg 521w, https://wp1.themevibrant.com/newwp/buildnox2/wp-content/uploads/2023/08/creative-1-300x279.jpg 300w" sizes="(max-width: 521px) 100vw, 521px" />
+                                <img loading="lazy" decoding="async" width="521" height="485" src="/assest/images/uploads/2023/08/creative-1.jpg" class="attachment-full size-full wp-image-5976" alt="" srcset="/assest/images/uploads/2023/08/creative-1.jpg 521w, gallery-1 300w" sizes="(max-width: 521px) 100vw, 521px" />
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-8622752 elementor-widget__width-initial elementor-widget elementor-widget-buildnox_hero_title" data-id="8622752" data-element_type="widget" data-widget_type="buildnox_hero_title.default">
@@ -601,7 +602,7 @@
 
                                                     <p class="mb_50 fs_18 te-bn-text"><b>Client-Focused, Results-Driven</b></p>
                                                     <br />
-                                                    <p class="mb_50">Our approach combines international investment standards with deep local knowledge. We partner with U.S. investors, family offices, and institutions to identify, acquire, and develop high-potential commercial, medical, residential, and mixed-use properties.</p>
+                                                    <p class="mb_50">Our approach combines international investment standards with deep local knowledge. We partner with U.S. investors, and institutions to identify, acquire, and develop high-potential commercial, medical, residential, and mixed-use properties.</p>
                                                     <p class="mb_50">From market analysis and due diligence to project execution and asset management, we handle the full investment lifecycle—so our partners can focus on returns.</p>
                                                 </div>
                                             </div>
@@ -791,25 +792,29 @@
             <div class="specialization-grid">
 
                 <div class="special-box">
-                    <div class="icon">🏢</div>
+                    <div class="icon">
+                        <img src="Assest/Images/buildnox/icons/commercial.png" /></div>
                     <h4>Commercial Real Estate</h4>
                     <p>Office complexes, retail centers, and business parks in high-growth urban corridors</p>
                 </div>
 
                 <div class="special-box">
-                    <div class="icon">🏥</div>
+                    <div class="icon">
+                        <img src="Assest/Images/buildnox/icons/health.png" /></div>
                     <h4>Healthcare Facilities</h4>
                     <p>Modern medical centers and specialized healthcare properties serving growing demand</p>
                 </div>
 
                 <div class="special-box">
-                    <div class="icon">⚡</div>
+                    <div class="icon">
+                        <img src="Assest/Images/buildnox/icons/hybrid.png" /></div>
                     <h4>Mixed-Use Development</h4>
                     <p>Integrated residential, commercial, and hospitality properties in strategic locations</p>
                 </div>
 
                 <div class="special-box">
-                    <div class="icon">📈</div>
+                    <div class="icon">
+                        <img src="Assest/Images/buildnox/icons/stock.png" /></div>
                     <h4>Smart Cities & SEZs</h4>
                     <p>Properties in Special Economic Zones and smart city developments with government support</p>
                 </div>
@@ -819,22 +824,22 @@
         <section class="agh-section">
 
             <!-- ================= Investor Services ================= -->
-            <h2 class="section-title">Our Investor Services</h2>
+            <h2 class="section-title">Investor Services</h2>
 
             <div class="services-grid">
                 <div class="service-card">
-                    <h4>Project Sourcing</h4>
-                    <p>Pre-vetted, off-market real estate opportunities aligned with your investment criteria and return targets</p>
+                    <h4>Invest</h4>
+                    <p>We source, underwrite, and present vetted investment opportunities for our funds and investor partners.</p>
                 </div>
 
                 <div class="service-card">
-                    <h4>Investment Fund Setup</h4>
-                    <p>Establish and manage dedicated investment funds tailored to your capital deployment strategy and timeline</p>
+                    <h4>Match</h4>
+                    <p>We connect qualified property owners and deal sponsors with institutional and private investors seeking vetted opportunities.</p>
                 </div>
 
                 <div class="service-card">
-                    <h4>Due Diligence & Analysis</h4>
-                    <p>Comprehensive market analysis, financial modeling, and risk assessment for every investment opportunity</p>
+                    <h4>Structure</h4>
+                    <p>We support sponsors and investors with fund formation, legal structuring, offering documents, financial projections, and capital-raising materials across U.S. and international markets.</p>
                 </div>
             </div>
 

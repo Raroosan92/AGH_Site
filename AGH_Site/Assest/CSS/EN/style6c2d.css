@@ -244,7 +244,7 @@ figure {
 }
 img {
 	display: inline-block;
-	max-width: 100%;
+	max-width: 60%;
 	height: auto;
 }
 .dropdown-toggle::after {
@@ -581,9 +581,10 @@ ul.header-top-1-contact-info li a:hover {
 .main-header .header-upper .inner-container {
 	position: relative;
 }
-.main-header .header-upper .logo-box {
-	z-index: 10;
-}
+	.main-header .header-upper .logo-box {
+		z-index: 10;
+		width: 28%;
+	}
 .main-header .header-upper .logo-box .logo {
 	position: relative;
 	display: block;
@@ -18483,15 +18484,16 @@ section {
 	padding-top: 21px;
 }
 
-.project-block-seven .inner-box .lower-content h4{
-	position: relative;
-	display: block;
-	font-size: 20px;
-	line-height: 30px;
-	font-family: 'Barlow', sans-serif;
-	font-weight: 500;
-	margin-bottom: 0px;
-}
+    .project-block-seven .inner-box .lower-content h4 {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 500;
+        margin-bottom: 0px;
+        color: #000;
+    }
 
 .project-block-seven .inner-box .lower-content h4 a{
 	display: inline-block;
