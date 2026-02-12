@@ -312,10 +312,10 @@
             <div class="bg-layer" style="background-image: url('/assest/images/uploads/2023/09/page-title.jpg');"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h1 style="color: black;">Who We Are</h1>
+                    <h1>Who We Are</h1>
                     <ul class="bread-crumb clearfix">
                         <li class="breadcrumb-item"><a href="Default.aspx">Home &nbsp;</a></li>
-                        <li style="color: black;" class="breadcrumb-item">Who We Are</li>
+                        <li  class="breadcrumb-item">Who We Are</li>
                     </ul>
                 </div>
             </div>
@@ -335,14 +335,18 @@
 
 
                                                 <div class="build-title-wrap">
-                                                    <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>AGH</h6>
+                                                    <h6 class="te-bn-subtitle theme-color ff_sec fw_bold tt_u fs_14 ls_1 mb_15"><span class="te-bn-subtitle_line w_30 h_2 theme-bg mr_10 d_iblock v_middle"></span>Global Capital. Local Expertise. Lasting Value.</h6>
 
                                                     <div class="main____title ">
-                                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Who We Are</h2>
+                                                        <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default" style="color: black;">Who We Are</h2>
                                                     </div>
 
 
-                                                    <p class="mb_50 fs_18 te-bn-text">A U.S.-based investment firm transforming undervalued real estate into high-quality assets across Morocco's fastest-growing markets.</p>
+                                                    <p class="mb_50 fs_18 te-bn-text">Atlas Global Holdings (AGH) is a U.S.-based real estate investment and development platform connecting global capital with high-growth opportunities across Morocco. Through a disciplined approach to sourcing, underwriting, and execution, AGH transforms strategically located opportunities into institutional-quality assets across residential, commercial, healthcare, and mixed-use sectors.
+
+Our platform combines international investment expertise with deep local market insight, allowing us to identify undervalued opportunities in Morocco’s fastest-growing economic corridors and convert them into high-performing, long-term assets. By integrating development, advisory, capital structuring, and asset management capabilities within a single platform, AGH delivers efficient execution and aligned investment outcomes for partners, investors, and stakeholders.
+
+With a focus on long-term value creation, transparency, and disciplined capital deployment, AGH serves as a trusted partner for investors seeking exposure to growth markets while maintaining institutional-grade governance, reporting, and investment standards.</p>
                                                 </div>
 
                                             </div>

@@ -568,7 +568,6 @@
     <Content Include="Assest\Images\uploads\2023\08\brand-5.png" />
     <Content Include="Assest\Images\uploads\2023\08\chooseus-bg.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\contact-1.jpg" />
-    <Content Include="Assest\Images\uploads\2023\08\creative-1 - Copy.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\creative-1.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\creative-2.jpg" />
     <Content Include="Assest\Images\uploads\2023\08\feature-1.jpg" />
@@ -1107,7 +1106,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>65369</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44329/</IISUrl>
+          <IISUrl>https://localhost:44330/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

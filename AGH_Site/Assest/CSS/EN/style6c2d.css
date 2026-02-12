@@ -1267,7 +1267,8 @@ ul.header-top-1-contact-info li a:hover {
 	padding: 30px 25px;
 	text-align: left;
 	margin-bottom: 100px;
-	margin-top: 25px;
+	margin-top: 0px;
+	background-color:white;
 }
 .mobile-menu-visible {
 	overflow: hidden;
@@ -1291,7 +1292,7 @@ ul.header-top-1-contact-info li a:hover {
 	-webkit-transition: all 900ms ease;
 	-ms-transition: all 900ms ease;
 	-o-transition: all 900ms ease;
-	background-color: var(--theme-color);
+	/*background-color: var(--theme-color);*/
 }
 .mobile-menu-visible .mobile-menu .menu-backdrop {
 	opacity: 0.70;
@@ -1339,7 +1340,7 @@ ul.header-top-1-contact-info li a:hover {
 	width: 24px;
 	text-align: center;
 	font-size: 30px;
-	color: #ffffff;
+	color: #202020;
 	cursor: pointer;
 	z-index: 10;
 	-webkit-transition: all 0.9s ease;
