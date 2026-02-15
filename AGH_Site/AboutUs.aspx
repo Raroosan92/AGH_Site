@@ -344,7 +344,8 @@
 
                                                     <p class="mb_50 fs_18 te-bn-text">Atlas Global Holdings (AGH) is a U.S.-based real estate investment and development platform connecting global capital with high-growth opportunities across Morocco. Through a disciplined approach to sourcing, underwriting, and execution, AGH transforms strategically located opportunities into institutional-quality assets across residential, commercial, healthcare, and mixed-use sectors.
 
-Our platform combines international investment expertise with deep local market insight, allowing us to identify undervalued opportunities in Morocco’s fastest-growing economic corridors and convert them into high-performing, long-term assets. By integrating development, advisory, capital structuring, and asset management capabilities within a single platform, AGH delivers efficient execution and aligned investment outcomes for partners, investors, and stakeholders.
+<br />
+                                                        Our platform combines international investment expertise with deep local market insight, allowing us to identify undervalued opportunities in Morocco’s fastest-growing economic corridors and convert them into high-performing, long-term assets. By integrating development, advisory, capital structuring, and asset management capabilities within a single platform, AGH delivers efficient execution and aligned investment outcomes for partners, investors, and stakeholders.
 
 With a focus on long-term value creation, transparency, and disciplined capital deployment, AGH serves as a trusted partner for investors seeking exposure to growth markets while maintaining institutional-grade governance, reporting, and investment standards.</p>
                                                 </div>
@@ -587,7 +588,7 @@ With a focus on long-term value creation, transparency, and disciplined capital 
                                             <div class="elementor-widget-container">
 
 
-                                                <div class="build-title-wrap">
+                                               <%-- <div class="build-title-wrap">
 
                                                     <div class="main____title ">
                                                         <h2 class="fw_black fs_45 mb_20 te-bn-title buildnox-size-default">Our Story</h2>
@@ -598,7 +599,7 @@ With a focus on long-term value creation, transparency, and disciplined capital 
                                                     <br />
                                                     <p class="mb_50">Atlas Global Holdings (AGH) was founded on a simple insight: Morocco's rapid urbanization and economic growth create exceptional opportunities for disciplined investors. While many overlook the North African market, we see a region with rising demand for modern real estate, strong demographic tailwinds, and significant value creation potential.</p>
                                                     <p class="mb_50">We target Morocco's strategic growth corridors—smart city developments, Special Economic Zones (SEZs), and infrastructure hubs—where international investment meets local expertise to deliver outsized returns.</p>
-                                                </div>
+                                                </div>--%>
                                                 <div class="build-title-wrap">
 
 
